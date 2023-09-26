@@ -29,10 +29,12 @@ export default {
         },
     },
     animation: {
-        'fade-out': 'fade-out 2s ease-out',
-        'fade-in': 'fade-in 2s ease-in',
+        'fade-out': 'fade-out 0.5s ease-out',
+        'fade-in': 'fade-in 0.5s ease-in',
     }
     },
   },
-  plugins: []
+  plugins: [
+    require('tailwindcss-animated')
+  ]
 };
