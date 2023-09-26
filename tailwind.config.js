@@ -9,7 +9,30 @@ export default {
       'white':'#fafaf9',
       'black':'#18181b'
     },
-    extend: {}
+    extend: {
+      keyframes: {
+        'fade-in':{
+          'from':{
+            opacity: '0'
+          },
+          'to':{
+            opacity: '100'
+          }
+        },
+        'fade-out':{
+          'from':{
+            opacity: '100'
+          },
+          'to':{
+            opacity: '0'
+          }
+        },
+    },
+    animation: {
+        'fade-out': 'fade-out 2s ease-out',
+        'fade-in': 'fade-in 2s ease-in',
+    }
+    },
   },
   plugins: []
 };

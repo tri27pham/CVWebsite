@@ -7,8 +7,6 @@
 
     let scroll;
 
-    import FadeInElement from '$components/scroll-fading.svelte';
-
 </script>
 
 
@@ -30,11 +28,11 @@
 
 <!-- <h1 class="fixed top-0 left-0">{scroll}</h1> -->
 
-<FadeInElement>
+<!-- <div class="fade" transition:fade={{ duration: 500 }}> -->
 
-    <div class="py-10 flex flex-col space-y-2">
+    <div class="py-10 flex flex-col space-y-2 ">
         <h3 class="text-center text-8xl text-white font-mono
-        hover:scale-110 transition duration-500">
+        hover:scale-110 transition duration-500 animate-fade-in">
             Tri Pham
         </h3>
         <h2 class="text-center text-2xl text-white hover:scale-105 transition duration-500">
@@ -86,10 +84,16 @@
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     </p>
     
-</FadeInElement>
+<!-- </div> -->
 
 <style lang="postcss">
+
     :global(html) {
       background-color: theme(colors.black);
     }
-  </style>
+
+    .fade {
+        transition: opacity 0.5s ease; 
+    }
+
+</style>
