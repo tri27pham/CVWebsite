@@ -25,6 +25,8 @@ import { onMount } from 'svelte';
     observer.observe(document.querySelector('.scrollable'));
     });
 
+    // import * as animateScroll from "svelte-scrollto";
+
 </script>
 
 
@@ -34,12 +36,28 @@ import { onMount } from 'svelte';
 
 <nav class="text-white bg-green">
     <div class="z-50 fixed top-7 left-10 text-xl">
-        <button class="hover:scale-125 transition duration-500">Tri Pham</button>
+        <a 
+            
+            class="hover:scale-125 transition duration-500">
+            Tri Pham
+        </a>
     </div>
-    <div  class="fixed top-7 right-10 flex flex-row space-x-10">
-        <button class="hover:scale-125 transition duration-500 text-xl">About me</button>
-        <button class="hover:scale-125 transition duration-500 text-xl">Academics</button>
-        <button class="hover:scale-125 transition duration-500 text-xl">Projects</button>
+    <div class="fixed top-7 right-10 flex flex-row space-x-10">
+        <a 
+            href="#AboutMe"
+            class="hover:scale-125 transition duration-500 text-xl">
+                About me
+        </a>
+        <a 
+            href="#Academics"
+            class="hover:scale-125 transition duration-500 text-xl">
+            Academics
+        </a>
+        <a 
+            href="#Projects"
+            class="hover:scale-125 transition duration-500 text-xl">
+            Projects
+        </a>
     </div>
 </nav>
 
@@ -47,7 +65,7 @@ import { onMount } from 'svelte';
 
 <!-- <div class="fade" transition:fade={{ duration: 500 }}> -->
 
-<div class="flex flex-col mt-96 mb-96 space-y-96">
+<div class="flex flex-col mt-96 mb-96">
 
 
     <div class="mb-10 flex flex-col space-y-2 scrollable animate-fade-in">
@@ -61,7 +79,8 @@ import { onMount } from 'svelte';
     </div>
 
 
-    <div class="scrollable animate-fade-in">
+    <div id="AboutMe" class="mt-96 mb-96 scrollable animate-fade-in">
+        
         <div class="flex flex-col hover:scale-105">
             <p class="p-4 text-center text-white text-3xl font-mono">
                 About me
@@ -72,23 +91,29 @@ import { onMount } from 'svelte';
         </div>
     </div>
 
-    <div class="flex flex-col hover:scale-105 scrollable animate-fade-in">
-        <p class="p-4 text-center text-white text-3xl font-mono">
-            Academics
-        </p>
-        <p class="p-2 text-base text-white font-mono">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        </p>
+    <div id="Academics" class="mt-96 mb-96">
+        <div class="flex flex-col hover:scale-105 scrollable animate-fade-in">
+            <p class="p-4 text-center text-white text-3xl font-mono">
+                Academics
+            </p>
+            <p class="p-2 text-base text-white font-mono">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+        </div>
     </div>
-    
-    <div>
-        <p class="p-4 text-center text-white text-3xl font-mono">
-            Projects
-        </p>
-        <p class="p-2 text-base text-white font-mono">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        </p>
+
+    <div id="Projects" class="mt-96 mb-96">
+        <div>
+            <p class="p-4 text-center text-white text-3xl font-mono">
+                Projects
+            </p>
+            <p class="p-2 text-base text-white font-mono">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+        </div>
     </div>
+
+
 
 
 </div>
