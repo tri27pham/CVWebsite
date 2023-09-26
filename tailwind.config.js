@@ -7,6 +7,7 @@ export default {
       'green':'#16a34a',
       'purple': '#6b21a8',
       'white':'#fafaf9',
+      'black':'#18181b'
     },
     extend: {}
   },
