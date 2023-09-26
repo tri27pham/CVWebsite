@@ -7,8 +7,34 @@ export default {
       'green':'#16a34a',
       'purple': '#6b21a8',
       'white':'#fafaf9',
+      'black':'#18181b'
     },
-    extend: {}
+    extend: {
+      keyframes: {
+        'fade-in':{
+          'from':{
+            opacity: '0'
+          },
+          'to':{
+            opacity: '100'
+          }
+        },
+        'fade-out':{
+          'from':{
+            opacity: '100'
+          },
+          'to':{
+            opacity: '0'
+          }
+        },
+    },
+    animation: {
+        'fade-out': 'fade-out 0.5s ease-out',
+        'fade-in': 'fade-in 0.5s ease-in',
+    }
+    },
   },
-  plugins: []
+  plugins: [
+    require('tailwindcss-animated')
+  ]
 };
