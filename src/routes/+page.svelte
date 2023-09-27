@@ -70,11 +70,16 @@ import { onMount } from 'svelte';
 
     <div class="mt-96"></div>
 
-    <div class="mb-10 flex flex-col space-y-2 scrollable animate-fade-in">
-        <h3 class="text-center text-8xl text-white font-mono
-        hover:scale-110 transition duration-500 ">
-            Tri Pham
-        </h3>
+    
+    <div class="mb-10 flex flex-col items-center space-y-2 scrollable animate-fade-in ">
+        <div class="w-max ">
+            <h3 class="text-center animate-typing overflow-hidden whitespace-nowrap 
+            hover:scale-110 transition duration-500
+            border-r-4 border-r-white pr-5 text-8xl text-white font-mono">
+                Tri Pham
+            </h3>
+        </div>
+
         <h2 class="text-center text-2xl text-white hover:scale-105 transition duration-500">
             MSci Computer Science student
         </h2>

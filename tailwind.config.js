@@ -27,10 +27,28 @@ export default {
             opacity: '0'
           }
         },
-    },
+        typing: {
+          "0%": {
+            width: "0%",
+            visibility: "hidden"
+          },
+          "100%": {
+            width: "100%"
+          }  
+        },
+        blink: {
+          "50%": {
+            borderColor: "transparent"
+          },
+          "100%": {
+            borderColor: "white"
+          }  
+        }
+      },
     animation: {
         'fade-out': 'fade-out 0.5s ease-out',
         'fade-in': 'fade-in 0.5s ease-in',
+        typing: "typing 2s steps(15), blink .7s infinite"
     }
     },
   },
