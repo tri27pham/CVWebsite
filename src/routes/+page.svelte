@@ -1,31 +1,7 @@
 <script>
 
-import { onMount } from 'svelte';
-
-    onMount(() => {
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-        const element = entry.target;
-            if (entry.isIntersecting) {
-                if (!element.classList.contains('animate-fade-in')) {
-                element.classList.add('animate-fade-in');
-                }
-                element.classList.remove('animate-fade-out');
-            } 
-            else {
-                if (!element.classList.contains('animate-fade-out')) {
-                element.classList.add('animate-fade-out');
-                }
-                element.classList.remove('animate-fade-in');
-            }
-        });
-    },
-    { threshold: 0.5 });
-
-    observer.observe(document.querySelector('.scrollable'));
-    });
-
-    // import * as animateScroll from "svelte-scrollto";
+    import ProgressBar from '../components/progress-bar.svelte';
+    import monitor from '../images/monitor.png';
 
 </script>
 
@@ -33,6 +9,8 @@ import { onMount } from 'svelte';
 <svelte:head>
     <title>Tri Pham</title>
 </svelte:head>
+
+
 
 <nav class="text-white bg-green">
 
@@ -66,23 +44,34 @@ import { onMount } from 'svelte';
 
 <!-- <div class="fade" transition:fade={{ duration: 500 }}> -->
 
+    
 <div id="top" class="flex flex-col mb-96">
 
     <div class="mt-96"></div>
 
+    <div class="z-9999">
+        <img src={monitor} alt="monitor" width="500" height="500"/>
+    </div>
     
-    <div class="mb-10 flex flex-col items-center space-y-2 scrollable animate-fade-in ">
+    <div class="mb-10 flex flex-col items-center space-y-16 scrollable animate-fade-in ">
         <div class="w-max ">
             <h3 class="text-center animate-typing overflow-hidden whitespace-nowrap 
             hover:scale-110 transition duration-500
             border-r-4 border-r-white pr-5 text-8xl text-white font-mono">
                 Tri Pham
             </h3>
+            <!-- <h2 class="text-center text-2xl text-white hover:scale-105 transition duration-500">
+                MSci Computer Science student
+            </h2> -->
         </div>
 
-        <h2 class="text-center text-2xl text-white hover:scale-105 transition duration-500">
-            MSci Computer Science student
-        </h2>
+        <ProgressBar />
+
+
+        <!-- <div class="w-2/5 h-6 g-gray-200 rounded-full dark:bg-white">
+            <div class="h-6 bg-blue-600 rounded-full dark:bg-white0" style="width: 100%"></div>
+          </div> -->
+
     </div>
 
 
