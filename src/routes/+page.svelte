@@ -67,7 +67,6 @@ import { onMount } from 'svelte';
 
 <div class="flex flex-col mt-96 mb-96">
 
-
     <div class="mb-10 flex flex-col space-y-2 scrollable animate-fade-in">
         <h3 class="text-center text-8xl text-white font-mono
         hover:scale-110 transition duration-500 ">
@@ -79,7 +78,9 @@ import { onMount } from 'svelte';
     </div>
 
 
-    <div id="AboutMe" class="mt-96 mb-96 scrollable animate-fade-in">
+    <div id="AboutMe" class="mb-96 scrollable animate-fade-in">
+
+        <div class="mt-96"></div>
         
         <div class="flex flex-col hover:scale-105">
             <p class="p-4 text-center text-white text-3xl font-mono">
@@ -91,7 +92,8 @@ import { onMount } from 'svelte';
         </div>
     </div>
 
-    <div id="Academics" class="mt-96 mb-96">
+    <div id="Academics" class=" mb-96">
+        <div class="mt-96"></div>
         <div class="flex flex-col hover:scale-105 scrollable animate-fade-in">
             <p class="p-4 text-center text-white text-3xl font-mono">
                 Academics
@@ -102,7 +104,8 @@ import { onMount } from 'svelte';
         </div>
     </div>
 
-    <div id="Projects" class="mt-96 mb-96">
+    <div id="Projects" class="mb-96">
+        <div class="mt-96"></div>
         <div>
             <p class="p-4 text-center text-white text-3xl font-mono">
                 Projects
