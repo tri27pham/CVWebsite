@@ -35,9 +35,10 @@ import { onMount } from 'svelte';
 </svelte:head>
 
 <nav class="text-white bg-green">
+
     <div class="z-50 fixed top-7 left-10 text-xl">
         <a 
-            
+            href="#top"
             class="hover:scale-125 transition duration-500">
             Tri Pham
         </a>
@@ -65,7 +66,9 @@ import { onMount } from 'svelte';
 
 <!-- <div class="fade" transition:fade={{ duration: 500 }}> -->
 
-<div class="flex flex-col mt-96 mb-96">
+<div id="top" class="flex flex-col mb-96">
+
+    <div class="mt-96"></div>
 
     <div class="mb-10 flex flex-col space-y-2 scrollable animate-fade-in">
         <h3 class="text-center text-8xl text-white font-mono
