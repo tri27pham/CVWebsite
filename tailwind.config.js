@@ -2,14 +2,17 @@
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
-    colors: {
-      'darkGrey': '#262626',
-      'green':'#16a34a',
-      'purple': '#6b21a8',
-      'white':'#fafaf9',
-      'black':'#18181b'
-    },
     extend: {
+      fontSize:{
+        'heading2': '1.5rem',
+      },
+      colors: {
+        'darkGrey': '#262626',
+        'green':'#16a34a',
+        'purple': '#6b21a8',
+        'white':'#fafaf9',
+        'black':'#18181b'
+      },
       keyframes: {
         'fade-in':{
           'from':{

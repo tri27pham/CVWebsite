@@ -39,13 +39,6 @@
         </a>
     </div>
 </nav>
-
-<!-- <h1 class="fixed top-0 left-0">{scroll}</h1> -->
-
-<!-- <div class="fade" transition:fade={{ duration: 500 }}> -->
-
-    
-
     
 <div id="top" class="flex flex-col">
     
@@ -86,16 +79,31 @@
 
     <div id="AboutMe" class="mb-96 scrollable animate-fade-in">
 
-        <div class="mt-96"></div>
+        <div class="mt-72"></div>
         
-        <div class="flex flex-col hover:scale-105">
-            <p class="p-4 text-center text-white text-3xl font-mono">
-                About me
-            </p>
-            <p class="p-2 text-base text-white font-mono">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
+        <div class="flex flex-row ">
+            <div class="column">
+                <p class="p-4 text-center text-white text-6xl font-mono">
+                    About me
+                </p>
+                <p class="p-1 max-w-full text-center text-white text-3xl font-mono">
+                    Tri Pham
+                </p>
+                <p class="p-1 max-w-full text-center text-white text-heading2 font-mono">
+                    Computer Science undergradudate
+                </p>
+            </div>
+            
+            <div class="column">
+                <p class="p-4 text-center text-white text-3xl font-mono">
+                    About me
+                </p>
+                <p class="p-2 text-base text-white font-mono">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
+            </div>
         </div>
+        
     </div>
 
     <div id="Academics" class=" mb-96">
@@ -122,19 +130,27 @@
         </div>
     </div>
 
-
-
-
 </div>
 
-    
-    
-<!-- </div> -->
 
 <style lang="postcss">
 
     :global(html) {
       background-color: theme(colors.black);
     }
-
+    .flex-container {
+        display: flex;
+        flex:1;
+    }
+    .column {
+        flex: 1; /* Each column takes up equal space */
+        width: 100%;
+        /* border-left: 1px solid #ccc; 
+        border-right: 1px solid #ccc;  */
+    }
+    .row{
+        width: 100%;
+        border-top: 1px solid #ccc; /* Add left border */
+        border-bottom: 1px solid #ccc; /* Add right border */
+    }
 </style>
