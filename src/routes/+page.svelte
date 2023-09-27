@@ -45,34 +45,42 @@
 <!-- <div class="fade" transition:fade={{ duration: 500 }}> -->
 
     
-<div id="top" class="flex flex-col mb-96">
 
-    <div class="mt-96"></div>
-
-    <div class="z-9999">
-        <img src={monitor} alt="monitor" width="500" height="500"/>
-    </div>
     
-    <div class="mb-10 flex flex-col items-center space-y-16 scrollable animate-fade-in ">
-        <div class="w-max ">
-            <h3 class="text-center animate-typing overflow-hidden whitespace-nowrap 
-            hover:scale-110 transition duration-500
-            border-r-4 border-r-white pr-5 text-8xl text-white font-mono">
-                Tri Pham
-            </h3>
-            <!-- <h2 class="text-center text-2xl text-white hover:scale-105 transition duration-500">
-                MSci Computer Science student
-            </h2> -->
+<div id="top" class="flex flex-col">
+    
+    <div id="monitorText" class="relative flex justify-center">
+        
+        <div id="monitor" class="absolute">
+            <div class="mt-10"></div>
+            <img src={monitor} alt="monitor" width="8000vw"/>
         </div>
 
-        <ProgressBar />
+        <div id="text" class="absolute mb-10 flex flex-col items-center space-y-16 scrollable animate-fade-in ">
 
+            <div class=" mt-64"></div>
+    
+            <div class="w-max ">
+                <h3 class="text-center animate-typing overflow-hidden whitespace-nowrap 
+                hover:scale-110 transition duration-500
+                border-r-4 border-r-white pr-5 text-6xl text-white font-mono">
+                    Tri Pham
+                </h3>
+                <!-- <h2 class="text-center text-2xl text-white hover:scale-105 transition duration-500">
+                    MSci Computer Science student
+                </h2> -->
+            </div>
+    
+            <ProgressBar />
+            
+            
 
-        <!-- <div class="w-2/5 h-6 g-gray-200 rounded-full dark:bg-white">
-            <div class="h-6 bg-blue-600 rounded-full dark:bg-white0" style="width: 100%"></div>
-          </div> -->
+        </div>
 
     </div>
+    
+    <div class="mt-96"></div>
+    <div class="mt-96"></div>
 
 
     <div id="AboutMe" class="mb-96 scrollable animate-fade-in">

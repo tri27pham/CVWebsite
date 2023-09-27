@@ -26,17 +26,16 @@
 
 <style>
     .inner, .outer{
-        height:40px;
+        height:30px;
         border-radius: 15px;
     }
     .outer{
-        width: 35vw;
+        width: 25vw;
         margin: 10px auto;
         background-color: transparent;
         border: 1px solid white;
     }
     .inner{
-        /* width:60%; */
         background-color: white;
     }
 
