@@ -11,7 +11,8 @@ export default {
         'green':'#16a34a',
         'purple': '#6b21a8',
         'white':'#fafaf9',
-        'black':'#18181b'
+        'black':'#18181b',
+        'charcoal':'#2a2a2a',
       },
       keyframes: {
         'fade-in':{
@@ -33,7 +34,7 @@ export default {
         typing: {
           "0%": {
             width: "0%",
-            visibility: "hidden"
+            visibility: "hidden",
           },
           "100%": {
             width: "100%"

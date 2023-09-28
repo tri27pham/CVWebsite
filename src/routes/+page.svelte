@@ -2,6 +2,10 @@
 
     import ProgressBar from '../components/progress-bar.svelte';
     import monitor from '../images/monitor.png';
+    import svelte from '../images/svelte.png';
+    import tailwind from '../images/tailwind.png';
+    import javascript from '../images/javascript.png';
+    import python from '../images/python.png';
 
 </script>
 
@@ -82,7 +86,7 @@
         <div class="mt-72"></div>
         
         <div class="flex flex-row ">
-            <div class="column">
+            <div class="">
                 <p class="p-4 text-center text-white text-6xl font-mono">
                     About me
                 </p>
@@ -94,13 +98,24 @@
                 </p>
             </div>
             
-            <div class="column">
-                <p class="p-4 text-center text-white text-3xl font-mono">
-                    About me
+            <div class="flex flex-wrap justify-center">
+                <p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150">
+                    <img src={svelte} alt="svelte" width="25">
+                    Sveltekit
                 </p>
-                <p class="p-2 text-base text-white font-mono">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                <p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150">
+                    <img src={tailwind} alt="svelte" width="30">
+                    Tailwind
                 </p>
+                <p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150">
+                    <img src={javascript} alt="svelte" width="30">
+                    Javascript
+                </p>
+                <p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150">
+                    <img src={python} alt="svelte" width="30">
+                    Python
+                </p>
+
             </div>
         </div>
         
