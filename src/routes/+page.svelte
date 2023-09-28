@@ -47,18 +47,17 @@
                         src={monitor}
                         class="transition-all duration-500 ease-in-out"
                         style="transform: {scaleMonitor ? 'scale(3)' : 'scale(1)'}"
-                        alt="monitor" width="8000vw">
+                        alt="monitor" width="10000vw">
                 </div>
 
                 <div id="text" class="absolute mt-10 mb-10 flex flex-col items-center space-y-8 scrollable animate-fade-in ">
 
-                    <div class=" mt-64"></div>
+                    <div class=" mt-72"></div>
             
                     <div class="w-max">
                         <h3 class="text-center animate-typing overflow-hidden whitespace-nowrap 
                         hover:scale-110 transition duration-500
-                        border-r-4 border-r-white pr-5 text-5xl text-white font-mono"
-                        >
+                        border-r-4 border-r-white pr-5 text-3xl text-white font-mono">
                             Tri Pham
                         </h3>
                     </div>
@@ -75,21 +74,7 @@
     {#await pageVisible then value}
         {#if value}
 
-        <div>
-            <div class="mt-96"></div>
-            
-            <div class="w-max">
-                <h3 class="text-center animate-typing overflow-hidden whitespace-nowrap 
-                hover:scale-110 transition duration-500
-                border-r-4 border-r-white pr-5 text-7xl text-white font-mono">
-                Hi, I'm Tri
-                </h3>
-            </div>
-
-            <div class="mt-96"></div>
-        </div>
-
-        <nav class="text-white bg-green">
+        <nav class="text-white font-mono">
 
             <div class="z-50 fixed top-7 left-10 text-xl">
                 <a 
@@ -117,28 +102,51 @@
             </div>
         </nav>
 
-        <div id="AboutMe" class="mb-96 scrollable animate-fade-in">
+        <div>
+            <div class="mt-96"></div>
+            
+            <div class="w-max">
+                <h3 class=" p-4 text-center animate-typing overflow-hidden whitespace-nowrap 
+                    hover:scale-110 transition duration-500
+                    border-r-4 border-r-white pr-5 text-7xl text-white font-mono">
+                    Hi, I'm <span style=" color:blueviolet;">Tri</span>.
+                </h3>
+                <h2 class="p-4 text-white font-mono text-3xl animate-typing overflow-hidden whitespace-nowrap
+                hover:scale-110 transition duration-500">
+                    Computer Science student
+                </h2>
+            </div>
 
             <div class="mt-96"></div>
-            <div class="mt-96"></div>
-            <div class="mt-96"></div>
+        </div>
+
+        <div class="mt-96"></div>
+        <div class="mt-96"></div>
+        <div class="mt-96"></div>
+
+
+        <div id="AboutMe" class="mb-96 scrollable animate-fade-in">
 
             <div class="mt-72"></div>
             
             <div class="flex flex-row ">
-                <div class="">
+                <div class="flex flex-col items-center">
                     <p class="p-4 text-center text-white text-6xl font-mono">
                         About me
                     </p>
-                    <p class="p-1 max-w-full text-center text-white text-3xl font-mono">
+                    <p class="p-1 max-w-full text-center text-blueViolet text-3xl font-mono">
                         Tri Pham
                     </p>
                     <p class="p-1 max-w-full text-center text-white text-heading2 font-mono">
                         Computer Science undergradudate
                     </p>
+                    <p class="p-1 max-w-full text-center text-white text-xl font-mono">
+                        I am third year student currently pursuing an <br>
+                        integrated  <span style=" color:blueViolet;">Masters</span> at King's College London.
+                    </p>
                 </div>
                 
-                <div class="flex flex-wrap justify-center">
+                <div class="flex flex-wrap items-center">
                     <p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150">
                         <img src={svelte} alt="svelte" width="25">
                         Sveltekit
@@ -209,5 +217,8 @@
         width: 100%;
         border-top: 1px solid #ccc; /* Add left border */
         border-bottom: 1px solid #ccc; /* Add right border */
+    }
+    .highlight {
+        color: var(--neon-green) 
     }
 </style>

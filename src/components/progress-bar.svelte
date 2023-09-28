@@ -26,14 +26,14 @@
 
 <style>
     .inner, .outer{
-        height:30px;
+        height:20px;
         border-radius: 15px;
     }
     .outer{
-        width: 25vw;
+        width: 12vw;
         margin: 10px auto;
         background-color: transparent;
-        border: 1px solid white;
+        border: 1px solid blueviolet;
     }
     .inner{
         background-color: white;

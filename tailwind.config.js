@@ -9,10 +9,11 @@ export default {
       colors: {
         'darkGrey': '#262626',
         'green':'#16a34a',
-        'purple': '#6b21a8',
+        'purple': '#8f0fff',
         'white':'#fafaf9',
         'black':'#18181b',
         'charcoal':'#2a2a2a',
+        'neonGreen':'#009c29',
       },
       keyframes: {
         'fade-in':{
@@ -52,7 +53,7 @@ export default {
     animation: {
         'fade-out': 'fade-out 0.5s ease-out',
         'fade-in': 'fade-in 0.5s ease-in',
-        typing: "typing 2s steps(15), blink .7s infinite"
+        'typing': "typing 2s steps(15), blink .7s infinite"
     }
     },
   },
