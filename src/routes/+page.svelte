@@ -7,22 +7,23 @@
     import javascript from '../images/javascript.png';
     import python from '../images/python.png';
 
-    // import { onMount } from 'svelte';
-
-    // let visible = true;
-
-    // onMount(() => {
-    // setTimeout(() => {
-    //     visible = false;
-    // }, 6000);
-    // });
-
     import { fade } from 'svelte/transition';
-    let visible = true;
+
+    let progressBarVisible = true;
 
     setTimeout(() => {
-    visible = false; 
+        progressBarVisible = false; 
     }, 5000);
+
+    let scaleMonitor = false;
+        setTimeout(() => {
+        scaleMonitor = true;
+    }, 5000);
+
+    let monitorVisible = true;
+        setTimeout(() => {
+        monitorVisible = false;
+    }, 5250);
 
 </script>
 
@@ -65,28 +66,33 @@
     
     <div id="monitorText" class="relative flex justify-center">
         
-        <div id="monitor" class="absolute">
-            <div class="mt-10"></div>
-            <img src={monitor} alt="monitor" width="8000vw"/>
-        </div>
+        {#if monitorVisible}
+            <div id="monitor" class="absolute">
+                <div class="mt-10"></div>
+                <img 
+                    src={monitor}
+                    class="transition-all duration-500 ease-in-out"
+                    style="transform: {scaleMonitor ? 'scale(3)' : 'scale(1)'}"
+                    alt="monitor" width="8000vw">
+            </div>
+        {/if}
 
-        <div id="text" class="absolute mb-10 flex flex-col items-center space-y-16 scrollable animate-fade-in ">
+        <div id="text" class="absolute mt-10 mb-10 flex flex-col items-center space-y-8 scrollable animate-fade-in ">
 
             <div class=" mt-64"></div>
     
-            <div class="w-max ">
+            <div class="w-max">
                 <h3 class="text-center animate-typing overflow-hidden whitespace-nowrap 
                 hover:scale-110 transition duration-500
-                border-r-4 border-r-white pr-5 text-6xl text-white font-mono">
+                border-r-4 border-r-white pr-5 text-5xl text-white font-mono"
+                >
                     Tri Pham
                 </h3>
-                <!-- <h2 class="text-center text-2xl text-white hover:scale-105 transition duration-500">
-                    MSci Computer Science student
-                </h2> -->
+
             </div>
     
             <div id="progress-bar">
-                {#await visible then value}
+                {#await progressBarVisible then value}
                     {#if value}
                         <div transition:fade="{{duration: 400}}">
                             <ProgressBar />
