@@ -7,6 +7,23 @@
     import javascript from '../images/javascript.png';
     import python from '../images/python.png';
 
+    // import { onMount } from 'svelte';
+
+    // let visible = true;
+
+    // onMount(() => {
+    // setTimeout(() => {
+    //     visible = false;
+    // }, 6000);
+    // });
+
+    import { fade } from 'svelte/transition';
+    let visible = true;
+
+    setTimeout(() => {
+    visible = false; 
+    }, 5000);
+
 </script>
 
 
@@ -68,8 +85,15 @@
                 </h2> -->
             </div>
     
-            <ProgressBar />
-            
+            <div id="progress-bar">
+                {#await visible then value}
+                    {#if value}
+                        <div transition:fade="{{duration: 400}}">
+                            <ProgressBar />
+                        </div>
+                    {/if} 
+                    {/await}
+            </div>           
             
 
         </div>
