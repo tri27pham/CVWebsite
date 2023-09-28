@@ -9,6 +9,7 @@
     import noSql from '../images/noSql.png';
     import sql from '../images/sql.png';
     import flutter from '../images/flutter.png';
+    import downArrow from '../images/downArrow.png';
     
 
 
@@ -112,7 +113,7 @@
             </div>
         </nav>
 
-        <div id="MainPage">
+        <div id="MainPage"class="relative">
             <div class=" mt-96"></div>
             <div class="w-max " style=" text-align: left;">
                 <h3 class=" p-4 text-center animate-typing overflow-hidden whitespace-nowrap 
@@ -125,7 +126,9 @@
                     <span style=" color:blueviolet;">Masters student</span> - Computer Science 
                 </h2>
             </div>
+            <img src={downArrow} alt="down-arrow" class="absolute bottom-0 right-0 animate-bounce" width="50">
             <div class=" mt-52"></div>
+
         </div>
 
         <div id="AboutMe">
