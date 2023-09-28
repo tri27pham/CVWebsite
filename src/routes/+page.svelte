@@ -76,29 +76,34 @@
 
         <nav class="text-white font-mono">
 
-            <div class="z-50 fixed top-7 left-10 text-xl">
+            <div class="z-50 fixed top-7 left-10 text-xl hover:scale-125 transition-transform duration-500  hover:text-purple">
                 <a 
-                    href="#top"
-                    class="hover:scale-125 transition duration-500">
+                    href="#top">
                     Tri Pham
                 </a>
             </div>
-            <div class="fixed top-7 right-10 flex flex-row space-x-10">
-                <a 
-                    href="#AboutMe"
-                    class="hover:scale-125 transition duration-500 text-xl">
+            <div class="fixed top-7  right-16 flex flex-row space-x-16">
+                <div class="hover:text-purple hover:scale-125 transition-transform duration-500 ">
+                    <a 
+                        href="#AboutMe"
+                        class= "hover:scale-125 transition-transform duration-500 text-xl">
                         About me
-                </a>
-                <a 
-                    href="#Academics"
-                    class="hover:scale-125 transition duration-500 text-xl">
-                    Academics
-                </a>
-                <a 
-                    href="#Projects"
-                    class="hover:scale-125 transition duration-500 text-xl">
-                    Projects
-                </a>
+                    </a>
+                </div>
+                <div class="hover:text-purple hover:scale-125 transition-transform duration-500 ">
+                    <a 
+                        href="#Academics"
+                        class= "hover:scale-125 transition-transform duration-500 text-xl">
+                        Academics
+                    </a>
+                </div>
+                <div class="hover:text-purple hover:scale-125 transition-transform duration-500 ">
+                    <a 
+                        href="#Projects"
+                        class=" hover:scale-125 transition-transform duration-500 text-xl">
+                        Projects
+                    </a>
+                </div>
             </div>
         </nav>
 

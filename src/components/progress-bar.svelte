@@ -25,18 +25,22 @@
 </div>
 
 <style>
-    .inner, .outer{
+    /* .inner, .outer{
         height:20px;
         border-radius: 15px;
-    }
+    } */
     .outer{
+        height: 20px;
         width: 12vw;
         margin: 10px auto;
         background-color: transparent;
         border: 1px solid blueviolet;
+        border-radius: 15px;
     }
     .inner{
+        height: 18px;
         background-color: white;
+        border-radius: 15px;
     }
 
 </style>
