@@ -81,7 +81,7 @@
             <div class="w-max">
                 <h3 class="text-center animate-typing overflow-hidden whitespace-nowrap 
                 hover:scale-110 transition duration-500
-                border-r-4 border-r-white pr-5 text-8xl text-white font-mono">
+                border-r-4 border-r-white pr-5 text-7xl text-white font-mono">
                 Hi, I'm Tri
                 </h3>
             </div>
