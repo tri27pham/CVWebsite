@@ -17,6 +17,8 @@
     import scala from '../images/scala.png';
     import java from '../images/java.png';
 
+    import ps from '../images/petersymonds.png';
+
 
     import downArrow from '../images/downArrow.png';
     import upArrow from '../images/upArrow.png';
@@ -122,9 +124,9 @@
                         </div>
                         <div class="hover:text-purple hover:scale-125 transition-transform duration-500 ">
                             <a 
-                                href="#Projects"
+                                href="#MainPage"
                                 class=" hover:scale-125 transition-transform duration-500 text-xl">
-                                Projects
+                                Contact
                             </a>
                         </div>
                     </div>
@@ -241,31 +243,14 @@
                         </div>
                     </div>
 
-                    <a href="#Academics">
+                    <a href="#Projects">
                         <img src={downArrow} alt="down-arrow" class="animate-bounce" style="position: absolute; right: 0%; bottom: 20%;" width="50">
                     </a>
 
                 </div>
             
-                <div id="Academics"class="h-screen z-0 flex justify-center items-center relative">
-                    <a href="#AboutMe">
-                        <img src={upArrow} alt="up-arrow" class="animate-bounce" style="position: absolute; right: 0%; top: 20%;" width="50">
-                    </a>
-                    <div class="flex flex-col hover:scale-105 scrollable animate-fade-in">
-                        <p class="p-4 text-center text-white text-3xl font-mono">
-                            Academics
-                        </p>
-                        <p class="p-2 text-base text-white font-mono">
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                        </p>
-                    </div>
-                    <a href="#Projects">
-                        <img src={downArrow} alt="down-arrow" class="animate-bounce" style="position: absolute; right: 0%; bottom: 20%;" width="50">
-                    </a>            
-                </div>
-            
                 <div id="Projects"class="h-screen z-0 flex justify-center items-center relative">
-                    <a href="#Academics">
+                    <a href="#AboutMe">
                         <img src={upArrow} alt="up-arrow" class="animate-bounce" style="position: absolute; right: 0%; top: 20%;" width="50">
                     </a>
                     <div>
