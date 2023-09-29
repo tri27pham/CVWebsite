@@ -117,9 +117,9 @@
                         </div>
                         <div class="hover:text-purple hover:scale-125 transition-transform duration-500 ">
                             <a 
-                                href="#Academics"
+                                href="#Projects"
                                 class= "hover:scale-125 transition-transform duration-500 text-xl">
-                                Academics
+                                Projects
                             </a>
                         </div>
                         <div class="hover:text-purple hover:scale-125 transition-transform duration-500 ">
@@ -159,24 +159,48 @@
                     </a>
 
                     <div class="flex flex-row space-x-8 columns-2">
-                        <div class="flex flex-col items-center w-1/2">
-                            <p class="p-4 text-center text-white text-6xl font-mono">
+                        <div class="flex flex-col items-center w-1/2 text-center text-white font-mono">
+                            <p class="p-4 text-6xl">
                                 About me
                             </p>
-                            <p class="p-1 max-w-full text-center text-white text-2xl font-mono hover:text-purple hover:scale-125 transition-transform duration-500">
+                            <p class="max-w-full text-2xl hover:text-purple hover:scale-125 transition-transform duration-500">
                                 Tri Pham
                             </p>
-                            <p class="p-1 max-w-full text-center text-white text-xl font-mono">
-                                Computer Science undergradudate
+                            <p class=" mb-3 max-w-fulfont-mono">
+                                London based MSci student
                             </p>
-                            <p class="p-1 max-w-full text-center text-white text-base font-mono">
+
+                            <p class="p-1 max-w-full text-base">
                                 I am third year student currently pursuing an 
                                 integrated Masters at King's College London, my year
                                 of graduation will be 2025. 
                                 Presently, I am aiming to specialise in Artifical Intelligence.
-
-
                             </p>
+
+                            <p class=" mt-4 text-xl">
+                                Education
+                            </p>
+                            <div class=" w-max flex flex-row">
+                                <div class="w-64 flex flex-col justify-center items-center">
+                                    <p class="text-base">
+                                        GCSEs: <br> 10 A*s
+                                    </p>
+                                </div>
+                               <div class="w-64 flex flex-col justify-center items-center">
+                                <img src={ps} alt="petersymonds" class="bg-white rounded-lg" width="50">
+                                <p class="mt-2 text-lg">
+                                    A-levels: 4 A*s 
+                                </p>
+                                <p>
+                                    Mathematics <br>
+                                    Further Mathematics <br>
+                                    Computer Science <br>
+                                    Physics <br>
+                                </p>
+                               </div>
+                               
+                            </div>
+
                         </div>
 
                         <div class="flex flex-wrap items-center w-1/2">
