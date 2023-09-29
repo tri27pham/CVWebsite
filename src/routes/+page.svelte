@@ -10,6 +10,7 @@
     import sql from '../images/sql.png';
     import flutter from '../images/flutter.png';
     import downArrow from '../images/downArrow.png';
+    import upArrow from '../images/upArrow.png';
     
 
 
@@ -126,14 +127,21 @@
                     <span style=" color:blueviolet;">Masters student</span> - Computer Science 
                 </h2>
             </div>
-            <img src={downArrow} alt="down-arrow" class="absolute bottom-0 right-0 animate-bounce" width="50">
+            <a href="#AboutMe">
+                <img src={downArrow} alt="down-arrow" class="absolute bottom-0 right-0 animate-bounce" width="50">
+            </a>
+            
             <div class=" mt-52"></div>
 
         </div>
 
-        <div id="AboutMe">
-
+        <div id="AboutMe"class="relative">
+            
             <div class="mt-96"></div>
+
+            <a href="#MainPage">
+                <img src={upArrow} alt="up-arrow" class="absolute top-14 right-0 animate-bounce" width="50">
+            </a>
 
             <div class="flex flex-row space-x-8 ">
                 <div class="flex flex-col items-center w-1/2">
@@ -191,9 +199,13 @@
             
             <div class="mt-52"></div>
 
+            <a href="#Academics">
+                <img src={downArrow} alt="down-arrow" class="absolute bottom-0 right-0 animate-bounce" width="50">
+            </a>
+
         </div>
     
-        <div id="Academics">
+        <div id="Academics"class="relative">
             <div class="mt-96"></div>
             <div class="flex flex-col hover:scale-105 scrollable animate-fade-in">
                 <p class="p-4 text-center text-white text-3xl font-mono">
@@ -204,10 +216,13 @@
                 </p>
             </div>
             <div class="mt-52"></div>
+            <a href="#Projects">
+                <img src={downArrow} alt="down-arrow" class="absolute bottom-0 right-0 animate-bounce" width="50">
+            </a>            
         </div>
     
         <div id="Projects">
-            <div class="mt-52"></div>
+            <div class="mt-96"></div>
             <div>
                 <p class="p-4 text-center text-white text-3xl font-mono">
                     Projects
@@ -216,6 +231,7 @@
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 </p>
             </div>
+            <div class="mt-64"></div>
             <div class="mt-96"></div>
         </div>
 
