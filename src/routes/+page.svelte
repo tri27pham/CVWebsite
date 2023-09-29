@@ -79,7 +79,7 @@
     {#await pageVisible then value}
         {#if value}
 
-    <div id="top" class="h-screen w-screen relative">
+    <div id="top" class="h-screen relative">
 
         <nav class="text-white font-mono absolute z-10">
 
@@ -114,8 +114,9 @@
             </div>
         </nav>
 
-        <div id="MainPage"class="h-screen w-screen z-0">
-            <div class="w-max " style=" text-align: left;">
+        <div id="MainPage"class="h-screen flex items-center z-0">
+            <div class=""></div>
+            <div class="w-max" style=" text-align: left;">
                 <h3 class=" p-4 text-center animate-typing overflow-hidden whitespace-nowrap 
                     hover:scale-110 transition duration-500
                     border-r-4 border-r-white pr-5 text-7xl text-white font-mono">
@@ -131,7 +132,7 @@
             </a>
         </div>
 
-        <div id="AboutMe"class="h-screen w-screen z-0">
+        <div id="AboutMe"class="h-screen z-0 flex justify-center items-center">
             <a href="#MainPage">
                 <img src={upArrow} alt="up-arrow" class="absolute top-14 right-0 animate-bounce" width="50">
             </a>
@@ -195,7 +196,7 @@
 
         </div>
     
-        <div id="Academics"class="h-screen w-screen z-0">
+        <div id="Academics"class="h-screen z-0 flex justify-center items-center">
             <div class="flex flex-col hover:scale-105 scrollable animate-fade-in">
                 <p class="p-4 text-center text-white text-3xl font-mono">
                     Academics
@@ -209,7 +210,7 @@
             </a>            
         </div>
     
-        <div id="Projects"class="h-screen w-screen z-0">
+        <div id="Projects"class="h-screen z-0 flex justify-center items-center">
             <div>
                 <p class="p-4 text-center text-white text-3xl font-mono">
                     Projects
@@ -249,8 +250,5 @@
         width: 100%;
         border-top: 1px solid #ccc; /* Add left border */
         border-bottom: 1px solid #ccc; /* Add right border */
-    }
-    .highlight {
-        color: var(--neon-green) 
     }
 </style>
