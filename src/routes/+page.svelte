@@ -114,9 +114,8 @@
             </div>
         </nav>
 
-        <div id="MainPage"class="h-screen flex items-center z-0">
-            <div class=""></div>
-            <div class="w-max" style=" text-align: left;">
+        <div id="MainPage"class="h-screen flex items-center z-0 relative">
+            <div style="text-align: left;">
                 <h3 class=" p-4 text-center animate-typing overflow-hidden whitespace-nowrap 
                     hover:scale-110 transition duration-500
                     border-r-4 border-r-white pr-5 text-7xl text-white font-mono">
@@ -128,13 +127,13 @@
                 </h2>
             </div>
             <a href="#AboutMe">
-                <img src={downArrow} alt="down-arrow" class="absolute bottom-0 right-0 animate-bounce" width="50">
+                <img src={downArrow} alt="down-arrow" class="animate-bounce" style="position: absolute; right: 0%; bottom: 20%;" width="50">
             </a>
         </div>
 
-        <div id="AboutMe"class="h-screen z-0 flex justify-center items-center">
+        <div id="AboutMe"class="h-screen z-0 flex justify-center items-center relative">
             <a href="#MainPage">
-                <img src={upArrow} alt="up-arrow" class="absolute top-14 right-0 animate-bounce" width="50">
+                <img src={upArrow} alt="up-arrow" class="animate-bounce" style="position: absolute; right: 0%; top: 20%;" width="50">
             </a>
 
             <div class="flex flex-row space-x-8 columns-2">
@@ -191,33 +190,39 @@
             </div>
 
             <a href="#Academics">
-                <img src={downArrow} alt="down-arrow" class="absolute bottom-0 right-0 animate-bounce" width="50">
+                <img src={downArrow} alt="down-arrow" class="animate-bounce" style="position: absolute; right: 0%; bottom: 20%;" width="50">
             </a>
 
         </div>
     
-        <div id="Academics"class="h-screen z-0 flex justify-center items-center">
+        <div id="Academics"class="h-screen z-0 flex justify-center items-center relative">
+            <a href="#AboutMe">
+                <img src={upArrow} alt="up-arrow" class="animate-bounce" style="position: absolute; right: 0%; top: 20%;" width="50">
+            </a>
             <div class="flex flex-col hover:scale-105 scrollable animate-fade-in">
                 <p class="p-4 text-center text-white text-3xl font-mono">
                     Academics
                 </p>
-                <!-- <p class="p-2 text-base text-white font-mono">
+                <p class="p-2 text-base text-white font-mono">
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p> -->
+                </p>
             </div>
             <a href="#Projects">
-                <img src={downArrow} alt="down-arrow" class="absolute bottom-0 right-0 animate-bounce" width="50">
+                <img src={downArrow} alt="down-arrow" class="animate-bounce" style="position: absolute; right: 0%; bottom: 20%;" width="50">
             </a>            
         </div>
     
-        <div id="Projects"class="h-screen z-0 flex justify-center items-center">
+        <div id="Projects"class="h-screen z-0 flex justify-center items-center relative">
+            <a href="#Academics">
+                <img src={upArrow} alt="up-arrow" class="animate-bounce" style="position: absolute; right: 0%; top: 20%;" width="50">
+            </a>
             <div>
                 <p class="p-4 text-center text-white text-3xl font-mono">
                     Projects
                 </p>
-                <!-- <p class="p-2 text-base text-white font-mono">
+                <p class="p-2 text-base text-white font-mono">
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p> -->
+                </p>
             </div>
         </div>
 
