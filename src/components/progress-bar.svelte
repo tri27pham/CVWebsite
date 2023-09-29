@@ -18,6 +18,7 @@
 
 </script>
 
+
 <div class="outer">
     <div class="inner" style="width: {$progress}%" >
         
@@ -25,18 +26,22 @@
 </div>
 
 <style>
-    .inner, .outer{
-        height:30px;
+    /* .inner, .outer{
+        height:20px;
         border-radius: 15px;
-    }
+    } */
     .outer{
-        width: 25vw;
+        height: 21px;
+        width: 12vw;
         margin: 10px auto;
         background-color: transparent;
-        border: 1px solid white;
+        border: 2px solid blueviolet;
+        border-radius: 15px;
     }
     .inner{
+        height: 17px;
         background-color: white;
+        border-radius: 15px;
     }
 
 </style>
