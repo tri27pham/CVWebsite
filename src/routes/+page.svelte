@@ -32,6 +32,11 @@
         scaleMonitor = true;
     }, 5000);
 
+    let contactBtnVisible = false;
+        setTimeout(() => {
+        contactBtnVisible = true;
+    }, 7800);
+
 </script>
 
 
@@ -121,10 +126,14 @@
                     border-r-4 border-r-white pr-5 text-7xl text-white font-mono">
                     Hi, I'm <span style=" color:blueviolet;">Tri</span>.
                 </h3>
-                <h2 class="p-4 text-white font-mono text-2xl animate-typing overflow-hidden whitespace-nowrap
-                hover:scale-110 transition duration-500">
+                <h2 class="p-4 text-white font-mono text-2xl animate-typing overflow-hidden whitespace-nowrap">
                     <span style=" color:blueviolet;">Masters student</span> - Computer Science 
                 </h2>
+                {#if contactBtnVisible}
+                    <div class=" m-4 animate-fade bg-black p-4 border border-purple hover:scale-105 transition duration-500 w-56 h-16 text-center items-center">
+                        <p class="mt-0 text-xl font-mono text-purple">CONTACT ME</p>
+                    </div>
+                {/if}
             </div>
             <a href="#AboutMe">
                 <img src={downArrow} alt="down-arrow" class="animate-bounce" style="position: absolute; right: 0%; bottom: 20%;" width="50">
