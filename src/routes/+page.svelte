@@ -5,10 +5,19 @@
     import svelte from '../images/svelte.png';
     import tailwind from '../images/tailwind.png';
     import javascript from '../images/javascript.png';
+    import html from '../images/html.png';
     import python from '../images/python.png';
+    import firebase from '../images/firebase.png';
     import noSql from '../images/noSql.png';
     import sql from '../images/sql.png';
     import flutter from '../images/flutter.png';
+    import dart from '../images/dart.png';
+    import swift from '../images/swift.png';
+    import cplusplus from '../images/c++.png';
+    import scala from '../images/scala.png';
+    import java from '../images/java.png';
+
+
     import downArrow from '../images/downArrow.png';
     import upArrow from '../images/upArrow.png';
     
@@ -81,163 +90,196 @@
         {/if} 
     {/await}    
     
+
+    MAIN PAGE
     {#await pageVisible then value}
         {#if value}
 
-    <div id="top" class="h-screen relative">
+            <div id="top" class="h-screen relative">
 
-        <nav class="text-white font-mono absolute z-10">
+                <nav class="text-white font-mono absolute z-10">
 
-            <div class="z-50 fixed top-7 left-10 text-xl hover:scale-125 transition-transform duration-500  hover:text-purple">
-                <a 
-                    href="#MainPage">
-                    Tri Pham
-                </a>
-            </div>
-            <div class="fixed top-7  right-16 flex flex-row space-x-16">
-                <div class="hover:text-purple hover:scale-125 transition-transform duration-500 ">
-                    <a 
-                        href="#AboutMe"
-                        class= "hover:scale-125 transition-transform duration-500 text-xl">
-                        About me
-                    </a>
-                </div>
-                <div class="hover:text-purple hover:scale-125 transition-transform duration-500 ">
-                    <a 
-                        href="#Academics"
-                        class= "hover:scale-125 transition-transform duration-500 text-xl">
-                        Academics
-                    </a>
-                </div>
-                <div class="hover:text-purple hover:scale-125 transition-transform duration-500 ">
-                    <a 
-                        href="#Projects"
-                        class=" hover:scale-125 transition-transform duration-500 text-xl">
-                        Projects
-                    </a>
-                </div>
-            </div>
-        </nav>
-
-        <div id="MainPage"class="h-screen flex items-center z-0 relative">
-            <div style="text-align: left;">
-                <h3 class=" p-4 text-center animate-typing overflow-hidden whitespace-nowrap 
-                    hover:scale-110 transition duration-500
-                    border-r-4 border-r-white pr-5 text-7xl text-white font-mono">
-                    Hi, I'm <span style=" color:blueviolet;">Tri</span>.
-                </h3>
-                <h2 class="p-4 text-white font-mono text-2xl animate-typing overflow-hidden whitespace-nowrap">
-                    <span style=" color:blueviolet;">Masters student</span> - Computer Science 
-                </h2>
-                {#if contactBtnVisible}
-                    <div class=" m-4 animate-fade bg-black p-4 border border-purple hover:scale-105 transition duration-500 w-56 h-16 text-center items-center">
-                        <p class="mt-0 text-xl font-mono text-purple">CONTACT ME</p>
+                    <div class="z-50 fixed top-7 left-10 text-xl hover:scale-125 transition-transform duration-500  hover:text-purple">
+                        <a 
+                            href="#MainPage">
+                            Tri Pham
+                        </a>
                     </div>
-                {/if}
-            </div>
-            <a href="#AboutMe">
-                <img src={downArrow} alt="down-arrow" class="animate-bounce" style="position: absolute; right: 0%; bottom: 20%;" width="50">
-            </a>
-        </div>
+                    <div class="fixed top-7  right-16 flex flex-row space-x-16">
+                        <div class="hover:text-purple hover:scale-125 transition-transform duration-500 ">
+                            <a 
+                                href="#AboutMe"
+                                class= "hover:scale-125 transition-transform duration-500 text-xl">
+                                About me
+                            </a>
+                        </div>
+                        <div class="hover:text-purple hover:scale-125 transition-transform duration-500 ">
+                            <a 
+                                href="#Academics"
+                                class= "hover:scale-125 transition-transform duration-500 text-xl">
+                                Academics
+                            </a>
+                        </div>
+                        <div class="hover:text-purple hover:scale-125 transition-transform duration-500 ">
+                            <a 
+                                href="#Projects"
+                                class=" hover:scale-125 transition-transform duration-500 text-xl">
+                                Projects
+                            </a>
+                        </div>
+                    </div>
+                </nav>
 
-        <div id="AboutMe"class="h-screen z-0 flex justify-center items-center relative">
-            <a href="#MainPage">
-                <img src={upArrow} alt="up-arrow" class="animate-bounce" style="position: absolute; right: 0%; top: 20%;" width="50">
-            </a>
-
-            <div class="flex flex-row space-x-8 columns-2">
-                <div class="flex flex-col items-center w-1/2">
-                    <p class="p-4 text-center text-white text-6xl font-mono">
-                        About me
-                    </p>
-                    <p class="p-1 max-w-full text-center text-white text-3xl font-mono hover:text-purple hover:scale-125 transition-transform duration-500">
-                        Tri Pham
-                    </p>
-                    <p class="p-1 max-w-full text-center text-white text-heading2 font-mono">
-                        Computer Science undergradudate
-                    </p>
-                    <p class="p-1 max-w-full text-center text-white text-xl font-mono">
-                        I am third year student currently pursuing an 
-                        integrated Masters at King's College London, my year
-                        of graduation will be 2025. 
-                        Presently, I am aiming to specialise in Artifical Intelligence,
-                    </p>
+                <div id="MainPage"class="h-screen flex items-center z-0 relative">
+                    <div style="text-align: left;">
+                        <h3 class=" p-4 text-center animate-typing overflow-hidden whitespace-nowrap 
+                            hover:scale-110 transition duration-500
+                            border-r-4 border-r-white pr-5 text-7xl text-white font-mono">
+                            Hi, I'm <span style=" color:blueviolet;">Tri</span>.
+                        </h3>
+                        <h2 class="p-4 text-white font-mono text-2xl animate-typing overflow-hidden whitespace-nowrap">
+                            <span style=" color:blueviolet;">Masters student</span> - Computer Science 
+                        </h2>
+                        {#if contactBtnVisible}
+                            <div class=" m-4 animate-fade bg-black p-4 border border-purple hover:scale-105 transition duration-500 w-56 h-16 text-center items-center">
+                                <p class="mt-0 text-xl font-mono text-purple">CONTACT ME</p>
+                            </div>
+                        {/if}
+                    </div>
+                    <a href="#AboutMe">
+                        <img src={downArrow} alt="down-arrow" class="animate-bounce" style="position: absolute; right: 0%; bottom: 20%;" width="50">
+                    </a>
                 </div>
 
-                <div class="flex flex-wrap items-center w-1/2">
-                    <p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150">
-                        <img src={svelte} alt="svelte" width="25">
-                        Sveltekit
-                    </p>
-                    <p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150">
-                        <img src={tailwind} alt="svelte" width="30">
-                        Tailwind
-                    </p>
-                    <p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150">
-                        <img src={javascript} alt="svelte" width="30">
-                        Javascript
-                    </p>
-                    <p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150">
-                        <img src={python} alt="svelte" width="30">
-                        Python
-                    </p>
-                    <p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150">
-                        <img src={noSql} alt="svelte" width="30">
-                        NoSQL
-                    </p>
-                    <p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150">
-                        <img src={sql} alt="svelte" width="30">
-                        SQL
-                    </p>
-                    <p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150">
-                        <img src={flutter} alt="svelte" width="30">
-                        Flutter
-                    </p>
-    
-    
+                <div id="AboutMe"class="h-screen z-0 flex justify-center items-center relative">
+                    <a href="#MainPage">
+                        <img src={upArrow} alt="up-arrow" class="animate-bounce" style="position: absolute; right: 0%; top: 20%;" width="50">
+                    </a>
+
+                    <div class="flex flex-row space-x-8 columns-2">
+                        <div class="flex flex-col items-center w-1/2">
+                            <p class="p-4 text-center text-white text-6xl font-mono">
+                                About me
+                            </p>
+                            <p class="p-1 max-w-full text-center text-white text-2xl font-mono hover:text-purple hover:scale-125 transition-transform duration-500">
+                                Tri Pham
+                            </p>
+                            <p class="p-1 max-w-full text-center text-white text-xl font-mono">
+                                Computer Science undergradudate
+                            </p>
+                            <p class="p-1 max-w-full text-center text-white text-base font-mono">
+                                I am third year student currently pursuing an 
+                                integrated Masters at King's College London, my year
+                                of graduation will be 2025. 
+                                Presently, I am aiming to specialise in Artifical Intelligence.
+
+
+                            </p>
+                        </div>
+
+                        <div class="flex flex-wrap items-center w-1/2">
+                            <p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150">
+                                <img src={svelte} alt="svelte" width="25">
+                                Sveltekit
+                            </p>
+                            <p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150">
+                                <img src={tailwind} alt="tailwind" width="30">
+                                Tailwind
+                            </p>
+                            <p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150">
+                                <img src={javascript} alt="javascript" width="30">
+                                Javascript
+                            </p>
+                            <p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150">
+                                <img src={html} alt="hmtl" width="30">
+                                HTML
+                            </p>
+                            <p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150">
+                                <img src={python} alt="python" width="30">
+                                Python
+                            </p>
+                            <p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150">
+                                <img src={firebase} alt="firebase" width="25">
+                                Firebase
+                            </p>
+                            <p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150">
+                                <img src={noSql} alt="nosql" width="30">
+                                NoSQL
+                            </p>
+                            <p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150">
+                                <img src={sql} alt="sql" width="30">
+                                SQL
+                                
+                            </p>
+                            <p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150">
+                                <img src={swift} alt="swift" width="30">
+                                Swift
+                            </p>
+                            <p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150">
+                                <img src={flutter} alt="flutter" width="30">
+                                Flutter
+                            </p>
+                            <p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150">
+                                <img src={dart} alt="dart" width="30">
+                                Dart
+                            </p>
+                            <p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150">
+                                <img src={cplusplus} alt="c++" width="30">
+                                C++
+                            </p>
+                            <p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150">
+                                <img src={scala} alt="scala" width="20">
+                                Scala
+                            </p>
+                            <p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150">
+                                <img src={java} alt="java" width="30">
+                                Java
+                            </p>
+                            
+            
+            
+                        </div>
+                    </div>
+
+                    <a href="#Academics">
+                        <img src={downArrow} alt="down-arrow" class="animate-bounce" style="position: absolute; right: 0%; bottom: 20%;" width="50">
+                    </a>
+
                 </div>
-            </div>
+            
+                <div id="Academics"class="h-screen z-0 flex justify-center items-center relative">
+                    <a href="#AboutMe">
+                        <img src={upArrow} alt="up-arrow" class="animate-bounce" style="position: absolute; right: 0%; top: 20%;" width="50">
+                    </a>
+                    <div class="flex flex-col hover:scale-105 scrollable animate-fade-in">
+                        <p class="p-4 text-center text-white text-3xl font-mono">
+                            Academics
+                        </p>
+                        <p class="p-2 text-base text-white font-mono">
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        </p>
+                    </div>
+                    <a href="#Projects">
+                        <img src={downArrow} alt="down-arrow" class="animate-bounce" style="position: absolute; right: 0%; bottom: 20%;" width="50">
+                    </a>            
+                </div>
+            
+                <div id="Projects"class="h-screen z-0 flex justify-center items-center relative">
+                    <a href="#Academics">
+                        <img src={upArrow} alt="up-arrow" class="animate-bounce" style="position: absolute; right: 0%; top: 20%;" width="50">
+                    </a>
+                    <div>
+                        <p class="p-4 text-center text-white text-3xl font-mono">
+                            Projects
+                        </p>
+                        <p class="p-2 text-base text-white font-mono">
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        </p>
+                    </div>
+                </div>
 
-            <a href="#Academics">
-                <img src={downArrow} alt="down-arrow" class="animate-bounce" style="position: absolute; right: 0%; bottom: 20%;" width="50">
-            </a>
-
-        </div>
-    
-        <div id="Academics"class="h-screen z-0 flex justify-center items-center relative">
-            <a href="#AboutMe">
-                <img src={upArrow} alt="up-arrow" class="animate-bounce" style="position: absolute; right: 0%; top: 20%;" width="50">
-            </a>
-            <div class="flex flex-col hover:scale-105 scrollable animate-fade-in">
-                <p class="p-4 text-center text-white text-3xl font-mono">
-                    Academics
-                </p>
-                <p class="p-2 text-base text-white font-mono">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p>
-            </div>
-            <a href="#Projects">
-                <img src={downArrow} alt="down-arrow" class="animate-bounce" style="position: absolute; right: 0%; bottom: 20%;" width="50">
-            </a>            
-        </div>
-    
-        <div id="Projects"class="h-screen z-0 flex justify-center items-center relative">
-            <a href="#Academics">
-                <img src={upArrow} alt="up-arrow" class="animate-bounce" style="position: absolute; right: 0%; top: 20%;" width="50">
-            </a>
-            <div>
-                <p class="p-4 text-center text-white text-3xl font-mono">
-                    Projects
-                </p>
-                <p class="p-2 text-base text-white font-mono">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p>
-            </div>
-        </div>
-
- 
-     </div>
         
+            </div>
 
         {/if}
     {/await}
