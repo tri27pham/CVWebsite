@@ -117,9 +117,9 @@
                         </div>
                         <div class="hover:text-purple hover:scale-125 transition-transform duration-500 ">
                             <a 
-                                href="#Academics"
+                                href="#Projects"
                                 class= "hover:scale-125 transition-transform duration-500 text-xl">
-                                Academics
+                                Projects
                             </a>
                         </div>
                         <div class="hover:text-purple hover:scale-125 transition-transform duration-500 ">
@@ -159,27 +159,43 @@
                     </a>
 
                     <div class="flex flex-row space-x-8 columns-2">
-                        <div class="flex flex-col items-center w-1/2">
-                            <p class="p-4 text-center text-white text-6xl font-mono">
+                        <div class="flex flex-col items-center w-1/2 text-center text-white font-mono">
+                            <p class="p-4 text-6xl">
                                 About me
                             </p>
-                            <p class="p-1 max-w-full text-center text-white text-2xl font-mono hover:text-purple hover:scale-125 transition-transform duration-500">
+                            <p class="max-w-full text-2xl text-purple hover:scale-125 transition-transform duration-500">
                                 Tri Pham
                             </p>
-                            <p class="p-1 max-w-full text-center text-white text-xl font-mono">
-                                Computer Science undergradudate
+                            <p class=" mb-3 max-w-fulfont-mono">
+                                London based MSci student
                             </p>
-                            <p class="p-1 max-w-full text-center text-white text-base font-mono">
-                                I am third year student currently pursuing an 
+
+                            <p class="p-1 max-w-full text-base">
+                                I am <span class="text-purple">third year student</span> currently pursuing an 
                                 integrated Masters at King's College London, my year
-                                of graduation will be 2025. 
-                                Presently, I am aiming to specialise in Artifical Intelligence.
-
-
+                                of graduation will be <span class="text-purple">2025</span>. 
+                                Presently, I am aiming to specialise in <span class="text-purple">Artifical Intelligence</span>.
                             </p>
+
+                            <p class="mt-4 text-xl">
+                                Education
+                            </p>
+                            <p class="py-1 text-base">
+                                2014-2019 GCSEs<br>
+                                Thornden School: <span class="text-purple">10 A*s</span>
+                            </p>
+                            <p class="py-1 text-base">
+                                2019-2021 A-levels <br>
+                                Peter Symonds College: <span class="text-purple">4 A*s</span>
+                            </p>
+                            <p class="py-1 text-base">
+                                2021-2025 <span class="text-purple">MSci</span><br>
+                                Kings College London
+                            </p>
+
                         </div>
 
-                        <div class="flex flex-wrap items-center w-1/2">
+                        <div class="flex flex-wrap w-1/2 items-center">
                             <p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150">
                                 <img src={svelte} alt="svelte" width="25">
                                 Sveltekit
