@@ -163,7 +163,7 @@
                             <p class="p-4 text-6xl">
                                 About me
                             </p>
-                            <p class="max-w-full text-2xl hover:text-purple hover:scale-125 transition-transform duration-500">
+                            <p class="max-w-full text-2xl text-purple hover:scale-125 transition-transform duration-500">
                                 Tri Pham
                             </p>
                             <p class=" mb-3 max-w-fulfont-mono">
@@ -171,39 +171,31 @@
                             </p>
 
                             <p class="p-1 max-w-full text-base">
-                                I am third year student currently pursuing an 
+                                I am <span class="text-purple">third year student</span> currently pursuing an 
                                 integrated Masters at King's College London, my year
-                                of graduation will be 2025. 
-                                Presently, I am aiming to specialise in Artifical Intelligence.
+                                of graduation will be <span class="text-purple">2025</span>. 
+                                Presently, I am aiming to specialise in <span class="text-purple">Artifical Intelligence</span>.
                             </p>
 
-                            <p class=" mt-4 text-xl">
+                            <p class="mt-4 text-xl">
                                 Education
                             </p>
-                            <div class=" w-max flex flex-row">
-                                <div class="w-64 flex flex-col justify-center items-center">
-                                    <p class="text-base">
-                                        GCSEs: <br> 10 A*s
-                                    </p>
-                                </div>
-                               <div class="w-64 flex flex-col justify-center items-center">
-                                <img src={ps} alt="petersymonds" class="bg-white rounded-lg" width="50">
-                                <p class="mt-2 text-lg">
-                                    A-levels: 4 A*s 
-                                </p>
-                                <p>
-                                    Mathematics <br>
-                                    Further Mathematics <br>
-                                    Computer Science <br>
-                                    Physics <br>
-                                </p>
-                               </div>
-                               
-                            </div>
+                            <p class="py-1 text-base">
+                                2014-2019 GCSEs<br>
+                                Thornden School: <span class="text-purple">10 A*s</span>
+                            </p>
+                            <p class="py-1 text-base">
+                                2019-2021 A-levels <br>
+                                Peter Symonds College: <span class="text-purple">4 A*s</span>
+                            </p>
+                            <p class="py-1 text-base">
+                                2021-2025 <span class="text-purple">MSci</span><br>
+                                Kings College London
+                            </p>
 
                         </div>
 
-                        <div class="flex flex-wrap items-center w-1/2">
+                        <div class="flex flex-wrap w-1/2 items-center">
                             <p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150">
                                 <img src={svelte} alt="svelte" width="25">
                                 Sveltekit
