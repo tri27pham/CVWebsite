@@ -91,7 +91,7 @@
     {/await}    
     
 
-    MAIN PAGE
+    <!-- MAIN PAGE -->
     {#await pageVisible then value}
         {#if value}
 
