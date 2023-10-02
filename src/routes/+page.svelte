@@ -307,11 +307,11 @@
 
                     <p class="p-4 text-center text-white text-3xl font-mono">Projects</p>
 
-                    <div class=" max-w-screen-lg flex spacex-4 overflow-x-scroll whitespace-nowrap">
-                        <div class=" w-1/4 bg-charcoal text-white h-20">Fuwa</div>
-                        <div class=" w-1/4 bg-charcoal text-white h-20">Song lyrics</div>
-                        <div class=" w-1/4 bg-charcoal text-white h-20">ScanIT</div>
-                        <div class=" w-1/4 bg-charcoal text-white h-20">etc.</div>
+                    <div class=" w-screen flex space-x-4 overflow-x-scroll whitespace-nowrap items-center">
+                        <div class=" w-80 bg-charcoal text-white h-20">Fuwa</div>
+                        <div class=" w-80 bg-charcoal text-white h-20">Song lyrics</div>
+                        <div class=" w-80 bg-charcoal text-white h-20">ScanIT</div>
+                        <div class=" w-80 bg-charcoal text-white h-20">etc.</div>
                     </div>
 
                 </div>
