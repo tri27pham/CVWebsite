@@ -1,5 +1,6 @@
 <script>
-	import ProgressBar from '../components/progress-bar.svelte';
+
+    import ProgressBar from '../components/progress-bar.svelte';
 	import monitor from '../images/monitor.png';
 	import svelte from '../images/svelte.png';
 	import tailwind from '../images/tailwind.png';
@@ -18,75 +19,81 @@
 	import tensorflow from '../images/tensorflow.png';
 	import spotify from '../images/spotify.png';
 
-	import ps from '../images/petersymonds.png';
+    import ps from '../images/petersymonds.png';
 
-	import downArrow from '../images/downArrow.png';
-	import upArrow from '../images/upArrow.png';
 
-	import { fade } from 'svelte/transition';
+    import downArrow from '../images/downArrow.png';
+    import upArrow from '../images/upArrow.png';
+    
 
-	let loadingScreenVisible = true;
 
-	setTimeout(() => {
-		loadingScreenVisible = false;
-	}, 5250);
+    import { fade } from 'svelte/transition';
 
-	let pageVisible = false;
-	setTimeout(() => {
-		pageVisible = true;
-	}, 5250);
+    let loadingScreenVisible = true;
 
-	let scaleMonitor = false;
-	setTimeout(() => {
-		scaleMonitor = true;
-	}, 5000);
+    setTimeout(() => {
+        loadingScreenVisible = false; 
+    }, 5250);
 
-	let contactBtnVisible = false;
-	setTimeout(() => {
-		contactBtnVisible = true;
-	}, 7800);
+    let pageVisible = false
+    setTimeout(() => {
+        pageVisible = true; 
+    }, 5250);
+
+    let scaleMonitor = false;
+        setTimeout(() => {
+        scaleMonitor = true;
+    }, 5000);
+
+    let contactBtnVisible = false;
+        setTimeout(() => {
+        contactBtnVisible = true;
+    }, 7800);
+
 </script>
 
+
 <svelte:head>
-	<title>Tri Pham</title>
+    <title>Tri Pham</title>
 </svelte:head>
 
-<!-- LOADING SCREEN -->
-{#await loadingScreenVisible then value}
-	{#if value}
-		<div id="monitorText" class="relative flex justify-center">
-			<div id="monitor" class="absolute">
-				<div class="mt-10" />
-				<img
-					src={monitor}
-					class="transition-all duration-500 ease-in-out"
-					style="transform: {scaleMonitor ? 'scale(3)' : 'scale(1)'}"
-					alt="monitor"
-					width="10000vw"
-				/>
-			</div>
+    
+    <!-- LOADING SCREEN -->
+    {#await loadingScreenVisible then value}
+        {#if value}
 
-			<div
-				id="text"
-				class="absolute mt-10 mb-10 flex flex-col items-center space-y-8 scrollable animate-fade-in"
-			>
-				<div class=" mt-72" />
+            <div id="monitorText" class="relative flex justify-center">
+        
+                <div id="monitor" class="absolute">
+                    <div class="mt-10"></div>
+                    <img 
+                        src={monitor}
+                        class="transition-all duration-500 ease-in-out"
+                        style="transform: {scaleMonitor ? 'scale(3)' : 'scale(1)'}"
+                        alt="monitor" width="10000vw">
+                </div>
 
-				<div class="w-max">
-					<h3
-						class="text-center animate-typing overflow-hidden whitespace-nowrap
+                <div id="text" class="absolute mt-10 mb-10 flex flex-col items-center space-y-8 scrollable animate-fade-in ">
+
+                    <div class=" mt-72"></div>
+            
+                    <div class="w-max">
+                        <h3 class="text-center animate-typing overflow-hidden whitespace-nowrap 
                         hover:scale-110 transition duration-500
-                        border-r-4 border-r-white pr-5 text-3xl text-white font-mono"
-					>
-						Tri Pham
-					</h3>
-				</div>
+                        border-r-4 border-r-white pr-5 text-3xl text-white font-mono">
+                            Tri Pham
+                        </h3>
+                    </div>
 
-				<ProgressBar />
-			</div>
-		</div>
-	{/if}
-{/await}
+                <ProgressBar />   
+                    
+                </div>
+
+            </div>
+
+        {/if} 
+    {/await}    
+    
 
 <!-- MAIN PAGE -->
 {#await pageVisible then value}
@@ -351,20 +358,6 @@
 								Website developed to display personal and professional qualities	
 							</p>
 						</div>		
-					
-						
-						<!-- <div class="bg-darkGrey rounded-3xl h-96 w-72 flex justify-center items-center hover:scale-110 transition duration-500">
-							<p class="font-mono text-white text-xl">tba</p>
-						</div>
-						<div class="bg-darkGrey rounded-3xl h-96 w-72 flex justify-center items-center hover:scale-110 transition duration-500">
-							<p class="font-mono text-white text-xl">tba</p>
-						</div>
-						<div class="bg-darkGrey rounded-3xl h-96 w-72 flex justify-center items-center hover:scale-110 transition duration-500">
-							<p class="font-mono text-white text-xl">tba</p>
-						</div>
-						<div class="bg-darkGrey rounded-3xl h-96 w-72 flex justify-center items-center hover:scale-110 transition duration-500">
-							<p class="font-mono text-white text-xl">tba</p>
-						</div> -->
 
 					</div>
 					
@@ -378,23 +371,27 @@
 	{/if}
 {/await}
 
+
+
+
 <style lang="postcss">
-	:global(html) {
-		background-color: theme(colors.black);
-	}
-	.flex-container {
-		display: flex;
-		flex: 1;
-	}
-	.column {
-		flex: 1; /* Each column takes up equal space */
-		width: 100%;
-		/* border-left: 1px solid #ccc; 
+
+    :global(html) {
+      background-color: theme(colors.black);
+    }
+    .flex-container {
+        display: flex;
+        flex:1;
+    }
+    .column {
+        flex: 1; /* Each column takes up equal space */
+        width: 100%;
+        /* border-left: 1px solid #ccc; 
         border-right: 1px solid #ccc;  */
-	}
-	.row {
-		width: 100%;
-		border-top: 1px solid #ccc; /* Add left border */
-		border-bottom: 1px solid #ccc; /* Add right border */
-	}
+    }
+    .row{
+        width: 100%;
+        border-top: 1px solid #ccc; /* Add left border */
+        border-bottom: 1px solid #ccc; /* Add right border */
+    }
 </style>
