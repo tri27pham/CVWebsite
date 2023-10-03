@@ -90,26 +90,32 @@
 {#await pageVisible then value}
 	{#if value}
 		<div id="top" class="h-screen relative">
+
 			<nav class="text-white font-mono absolute z-10 ">
 				<div
 					class="z-50 fixed top-7 left-10 text-xl hover:scale-125 transition-transform duration-500 hover:text-purple"
 				>
-					<a href="#MainPage"> Tri Pham </a>
+					<a href="#MainPage"> TriPham. </a>
 				</div>
-				<div class="fixed top-7 right-16 flex flex-row space-x-16">
+				<div class="fixed top-7 right-16 flex flex-row space-x-10">
 					<div class="hover:text-purple hover:scale-125 transition-transform duration-500">
 						<a href="#AboutMe" class="hover:scale-125 transition-transform duration-500 text-xl">
-							About me
+							// about me
+						</a>
+					</div>
+					<div class="hover:text-purple hover:scale-125 transition-transform duration-500">
+						<a href="#Experience" class="hover:scale-125 transition-transform duration-500 text-xl">
+							// experience
 						</a>
 					</div>
 					<div class="hover:text-purple hover:scale-125 transition-transform duration-500">
 						<a href="#Projects" class="hover:scale-125 transition-transform duration-500 text-xl">
-							Projects
+							// projects
 						</a>
 					</div>
 					<div class="hover:text-purple hover:scale-125 transition-transform duration-500">
 						<a href="#MainPage" class=" hover:scale-125 transition-transform duration-500 text-xl">
-							Contact
+							// contact
 						</a>
 					</div>
 				</div>
@@ -127,7 +133,7 @@
 					<h2
 						class="p-4 text-white font-mono text-2xl animate-typing overflow-hidden whitespace-nowrap"
 					>
-						<span style=" color:blueviolet;">Masters student</span> - Computer Science
+						<span style=" color:blueviolet;">MASTERS STUDENT</span> - COMPUTER SCIENCE
 					</h2>
 					{#if contactBtnVisible}
 						<div
@@ -167,7 +173,7 @@
 						>
 							Tri Pham
 						</p>
-						<p class=" mb-3 max-w-fulfont-mono">London based MSci student</p>
+						<p class=" mb-3 max-w-fulfont-mono"> London based MSci student </p>
 
 						<p class="p-1 max-w-full text-base">
 							I am <span class="text-purple">third year student</span> currently pursuing an
@@ -187,6 +193,32 @@
 							2021-2025 Kings College London <span class="text-purple">MSci</span>
 						</p>
 					</div>
+
+				</div>
+
+				<a href="#Experience">
+					<img
+						src={downArrow}
+						alt="down-arrow"
+						class="animate-bounce"
+						style="position: absolute; right: 0%; bottom: 20%;"
+						width="50"
+					/>
+				</a>
+			</div>
+
+			<div id="Experience" class="h-screen z-0 flex justify-center items-center relative">
+				<a href="#AboutMe">
+					<img
+						src={upArrow}
+						alt="up-arrow"
+						class="animate-bounce"
+						style="position: absolute; right: 0%; top: 20%;"
+						width="50"
+					/>
+				</a>
+
+				<div class="flex flex-row space-x-8 columns-2">
 
 					<div class="flex flex-wrap w-1/2 items-center">
 						<p
@@ -302,7 +334,7 @@
                     
                 <div class=" max-w-full flex flex-col"> 
 
-                    <p class="p-4 text-center text-white text-3xl font-mono">Projects</p>
+                    <p class="p-4 text-white text-6xl font-mono text-left">Projects</p>
 
                     <!-- <div class=" w-screen flex space-x-4 overflow-x-scroll whitespace-nowrap items-center">
                         <div class=" w-80 bg-charcoal text-white h-20">Fuwa</div>
@@ -310,6 +342,29 @@
                         <div class=" w-80 bg-charcoal text-white h-20">ScanIT</div>
                         <div class=" w-80 bg-charcoal text-white h-20">etc.</div>
                     </div> -->
+
+					<div class="flex py-10 space-x-6 overflow-x-auto">
+						<div class="bg-darkGrey rounded-3xl h-96 w-72 flex flex-col items-center hover:scale-110 transition duration-500 relative">
+							<p class="py-2 font-mono text-white text-3xl text-left">Fuwa Fuwa </p>
+							<div class="py-1 flex flex-row">
+								<img src={flutter} alt="flutter" width="25" />
+								<img src={dart} alt="dart" width="25" />
+						</div>							
+						</div>
+						<div class="bg-darkGrey rounded-3xl h-96 w-72 flex justify-center items-center hover:scale-110 transition duration-500">
+							<p class="font-mono text-white text-xl">Song Recommendation App</p>
+						</div>
+						<div class="bg-darkGrey rounded-3xl h-96 w-72 flex justify-center items-center hover:scale-110 transition duration-500">
+							<p class="font-mono text-white text-xl">CV Website</p>
+						</div>
+						<div class="bg-darkGrey rounded-3xl h-96 w-72 flex justify-center items-center hover:scale-110 transition duration-500">
+							<p class="font-mono text-white text-xl">tba</p>
+						</div>
+						<div class="bg-darkGrey rounded-3xl h-96 w-72 flex justify-center items-center hover:scale-110 transition duration-500">
+							<p class="font-mono text-white text-xl">tba</p>
+						</div>
+					</div>
+					
 
                 </div>
 
