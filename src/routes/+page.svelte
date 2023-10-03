@@ -337,15 +337,21 @@
 								App using NLP to analyse lyrics, extracting genres & recommending similar songs
 							</p>
 						</div>		
-						
+												
 						<div class="bg-darkGrey rounded-3xl h-96 w-72 flex flex-col hover:scale-110 transition duration-500 relative">
-							<p class="pt-4 pb-2 px-4 font-sans text-white text-3xl text-left justify-center">
-								Resume Website
+							<p class="pt-4 pl-4 pb-1 font-sans text-white text-3xl text-left justify-center w-max">
+								Resume Website								 
 							</p>
+							<div class="flex px-4 py-1 space-x-2">
+								<img src={svelte} alt="svelte" width="15"/>
+								<img src={html} alt="html" width="15"/>
+								<img src={tailwind} alt="tailwind" width="15"/>
+							</div>					
 							<p class=" px-4 font-sans text-gray-400 text-sm text-left justify-center">
-								Website developed to display personal and professional qualities				
+								Website developed to display personal and professional qualities	
 							</p>
-						</div>								
+						</div>		
+					
 						
 						<!-- <div class="bg-darkGrey rounded-3xl h-96 w-72 flex justify-center items-center hover:scale-110 transition duration-500">
 							<p class="font-mono text-white text-xl">tba</p>
