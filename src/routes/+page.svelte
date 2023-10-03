@@ -15,6 +15,8 @@
 	import cplusplus from '../images/c++.png';
 	import scala from '../images/scala.png';
 	import java from '../images/java.png';
+	import tensorflow from '../images/tensorflow.png';
+	import spotify from '../images/spotify.png';
 
 	import ps from '../images/petersymonds.png';
 
@@ -308,18 +310,29 @@
 					<div class="flex py-10 space-x-6 overflow-visible overflow-x-auto">
 						
 						<div class="bg-darkGrey rounded-3xl h-96 w-72 flex flex-col hover:scale-110 transition duration-500 relative">
-							<p class="pt-4 pb-2 px-4 font-sans text-white text-3xl text-left justify-center">
-								Fuwa Fuwa 
+							<p class="pt-4 pl-4 pb-1 font-sans text-white text-3xl text-left justify-center w-max">
+								Fuwa Fuwa								 
 							</p>
+							<div class="flex px-3 py-1 space-x-2">
+								<img src={flutter} alt="flutter" width="20"/>
+								<img src={dart} alt="dart" width="15" />
+							</div>							
 							<p class=" px-4 font-sans text-gray-400 text-sm text-left justify-center">
 								Application for a small business to organise internal operations
 							</p>
 						</div>
 
 						<div class="bg-darkGrey rounded-3xl h-96 w-72 flex flex-col hover:scale-110 transition duration-500 relative">
-							<p class="pt-4 pb-2 px-4 font-sans text-white text-3xl text-left justify-center">
-								LyricSync
+							<p class="pt-4 pl-4 pb-1 font-sans text-white text-3xl text-left justify-center w-max">
+								LyricSync								 
 							</p>
+							<div class="flex px-3 py-1 space-x-2">
+								<img src={flutter} alt="flutter" width="20"/>
+								<img src={dart} alt="dart" width="15" />
+								<img src={python} alt="python" width="15" />
+								<img src={tensorflow} alt="tensorflow" width="15" />
+								<img src={spotify} alt="spotify" width="15" />
+							</div>					
 							<p class=" px-4 font-sans text-gray-400 text-sm text-left justify-center">
 								App using NLP to analyse lyrics, extracting genres & recommending similar songs
 							</p>
