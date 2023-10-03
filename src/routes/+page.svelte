@@ -90,7 +90,7 @@
 {#await pageVisible then value}
 	{#if value}
 		<div id="top" class="h-screen relative">
-			<nav class="text-white font-mono absolute z-10">
+			<nav class="text-white font-mono absolute z-10 ">
 				<div
 					class="z-50 fixed top-7 left-10 text-xl hover:scale-125 transition-transform duration-500 hover:text-purple"
 				>
@@ -178,16 +178,13 @@
 
 						<p class="mt-4 text-xl">Education</p>
 						<p class="py-1 text-base">
-							2014-2019 GCSEs<br />
-							Thornden School: <span class="text-purple">10 A*s</span>
+							2014-2019 Thornden School GCSEs: <span class="text-purple">10 A*s</span>
 						</p>
 						<p class="py-1 text-base">
-							2019-2021 A-levels <br />
-							Peter Symonds College: <span class="text-purple">4 A*s</span>
+							2019-2021 Peter Symonds College A-levels: <span class="text-purple">4 A*s</span>
 						</p>
 						<p class="py-1 text-base">
-							2021-2025 <span class="text-purple">MSci</span><br />
-							Kings College London
+							2021-2025 Kings College London <span class="text-purple">MSci</span>
 						</p>
 					</div>
 
@@ -307,12 +304,12 @@
 
                     <p class="p-4 text-center text-white text-3xl font-mono">Projects</p>
 
-                    <div class=" w-screen flex space-x-4 overflow-x-scroll whitespace-nowrap items-center">
+                    <!-- <div class=" w-screen flex space-x-4 overflow-x-scroll whitespace-nowrap items-center">
                         <div class=" w-80 bg-charcoal text-white h-20">Fuwa</div>
                         <div class=" w-80 bg-charcoal text-white h-20">Song lyrics</div>
                         <div class=" w-80 bg-charcoal text-white h-20">ScanIT</div>
                         <div class=" w-80 bg-charcoal text-white h-20">etc.</div>
-                    </div>
+                    </div> -->
 
                 </div>
 
