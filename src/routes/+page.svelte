@@ -18,6 +18,8 @@
 	import java from '../images/java.png';
 	import tensorflow from '../images/tensorflow.png';
 	import spotify from '../images/spotify.png';
+	import linkedin from '../images/linkedin.png';
+	import github from '../images/github.png';
 
     import ps from '../images/petersymonds.png';
 
@@ -107,10 +109,15 @@
 				>
 					<a href="#MainPage"> TriPham. </a>
 				</div>
-				<div class="fixed top-7 right-16 flex flex-row space-x-16">
+				<div class="fixed top-7 right-16 flex flex-row space-x-12">
 					<div class="hover:text-purple hover:scale-125 transition-transform duration-500">
 						<a href="#AboutMe" class="hover:scale-125 transition-transform duration-500 text-xl">
 							// about me
+						</a>
+					</div>
+					<div class="hover:text-purple hover:scale-125 transition-transform duration-500">
+						<a href="#Experience" class="hover:scale-125 transition-transform duration-500 text-xl">
+							// experience
 						</a>
 					</div>
 					<div class="hover:text-purple hover:scale-125 transition-transform duration-500">
@@ -118,11 +125,18 @@
 							// projects
 						</a>
 					</div>
-					<div class="hover:text-purple hover:scale-125 transition-transform duration-500">
-						<a href="#MainPage" class=" hover:scale-125 transition-transform duration-500 text-xl">
-							// contact
-						</a>
-					</div>
+					<div class="flex flex-row space-x-6">
+						<div class="hover:scale-125 transition-transform duration-500">
+							<a href="https://www.linkedin.com/in/trippham/" target="_blank"> 
+								<img src={linkedin} alt="lingitkedin" width="30" />
+							</a>						
+						</div>
+						<div class="hover:scale-125 transition-transform duration-500">
+							<a href="https://github.com/tri27pham" target="_blank"> 
+								<img src={github} alt="github" width="30" />
+							</a>						
+						</div>
+					</div>					
 				</div>
 			</nav>
 
@@ -171,7 +185,7 @@
 				</a>
 
 				<div class="flex flex-row space-x-8 columns-2">
-					<div class="flex flex-col items-center w-1/2 text-center text-white font-mono">
+					<div class="flex flex-col items-center w-3/4 text-center text-white font-mono">
 						<p class="p-4 text-6xl">About me</p>
 						<p
 							class="max-w-full text-2xl text-purple hover:scale-125 transition-transform duration-500"
@@ -181,16 +195,19 @@
 						<p class=" mb-3 max-w-fulfont-mono">London based MSci student</p>
 
 						<p class="p-1 max-w-full text-base">
-							I am <span class="text-purple">third year student</span> currently pursuing an
-							integrated Masters at King's College London, my year of graduation will be
-							<span class="text-purple">2025</span>. Presently, I am aiming to specialise in
-							<span class="text-purple">Artificial Intelligence</span>.
+							I am a third-year student pursuing an integrated Master's degree program at <span class="text-purple">Kings College London</span>, 
+							with an expected graduation year of <span class="text-purple">2025</span>. 
+							My current academic focus is on specializing in <span class="text-purple">Artificial Intelligence</span>.<br><br>
+							
+							Outside of my academic commitments, I enjoy spending time engaging in projects aimed at honing my skills 
+							and exploring new areas. Most recently, I have developed a keen interest in <span class="text-purple">Machine Learning</span>,
+							which I am incorporating into my ongoing projects.
+
+
+							
 						</p>
 
 						<p class="mt-4 text-xl">Education</p>
-						<p class="py-1 text-base">
-							2014-2019 Thornden School GCSEs: <span class="text-purple">10 A*s</span>
-						</p>
 						<p class="py-1 text-base">
 							2019-2021 Peter Symonds College A-levels: <span class="text-purple">4 A*s</span>
 						</p>
@@ -199,7 +216,7 @@
 						</p>
 					</div>
 
-					<div class="flex flex-wrap w-1/2 items-center">
+					<!-- <div class="flex flex-wrap w-1/2 items-center">
 						<p
 							class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150"
 						>
@@ -284,6 +301,120 @@
 							<img src={java} alt="java" width="30" />
 							Java
 						</p>
+					</div> -->
+				</div>
+
+				<a href="#Experience">
+					<img
+						src={downArrow}
+						alt="down-arrow"
+						class="animate-bounce"
+						style="position: absolute; right: 0%; bottom: 20%;"
+						width="50"
+					/>
+				</a>
+			</div>
+
+			<div id="Experience" class="h-screen z-0 flex justify-center items-center relative">
+				<a href="#AboutMe">
+					<img
+						src={upArrow}
+						alt="up-arrow"
+						class="animate-bounce"
+						style="position: absolute; right: 0%; top: 20%;"
+						width="50"
+					/>
+				</a>
+
+				<div class="flex flex-col space-x-8">
+					<p class="p-4 text-white text-6xl font-mono text-left">Experience</p>
+
+					<div class="flex flex-row">
+						<p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150">
+							<img src={python} alt="python" width="30" />
+							Python
+						</p>
+						<p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150">
+							<img src={java} alt="java" width="30" />
+							Java
+						</p>
+					</div>
+					
+					<div class="flex flex-wrap w-1/2 items-center">
+						<p
+							class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150"
+						>
+							<img src={svelte} alt="svelte" width="25" />
+							Sveltekit
+						</p>
+						<p
+							class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150"
+						>
+							<img src={tailwind} alt="tailwind" width="30" />
+							Tailwind
+						</p>
+						<p
+							class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150"
+						>
+							<img src={javascript} alt="javascript" width="30" />
+							Javascript
+						</p>
+						<p
+							class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150"
+						>
+							<img src={html} alt="hmtl" width="30" />
+							HTML
+						</p>
+						
+						<p
+							class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150"
+						>
+							<img src={firebase} alt="firebase" width="25" />
+							Firebase
+						</p>
+						<p
+							class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150"
+						>
+							<img src={noSql} alt="nosql" width="30" />
+							NoSQL
+						</p>
+						<p
+							class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150"
+						>
+							<img src={sql} alt="sql" width="30" />
+							SQL
+						</p>
+						<p
+							class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150"
+						>
+							<img src={swift} alt="swift" width="30" />
+							Swift
+						</p>
+						<p
+							class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150"
+						>
+							<img src={flutter} alt="flutter" width="30" />
+							Flutter
+						</p>
+						<p
+							class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150"
+						>
+							<img src={dart} alt="dart" width="30" />
+							Dart
+						</p>
+						<p
+							class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150"
+						>
+							<img src={cplusplus} alt="c++" width="30" />
+							C++
+						</p>
+						<p
+							class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 hover:scale-110 duration-150"
+						>
+							<img src={scala} alt="scala" width="20" />
+							Scala
+						</p>
+						
 					</div>
 				</div>
 
@@ -298,9 +429,10 @@
 				</a>
 			</div>
 
+
 			<div id="Projects" class="h-screen z-0 flex justify-center items-center relative">
 
-				<a href="#AboutMe">
+				<a href="#Experience">
 					<img
 						src={upArrow}
 						alt="up-arrow"
