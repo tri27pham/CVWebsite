@@ -21,6 +21,7 @@
 	import spotify from '../images/spotify.png';
 	import linkedin from '../images/linkedin.png';
 	import github from '../images/github.png';
+	import citymapper from '../images/citymapper.png';
 
     import ps from '../images/petersymonds.png';
 
@@ -185,7 +186,7 @@
 					/>
 				</a>
 
-				<div class="flex flex-row columns-2">
+				<div class="flex flex-row columns-2 max-w-full">
 					<div class="flex flex-col items-center w-3/5 text-center text-white font-mono">
 						<p class="p-4 text-6xl">About me</p>
 						<p
@@ -392,9 +393,9 @@
 
                     <p class="p-4 text-white text-6xl font-mono text-left">Projects</p>
 
-					<div class="flex py-10 w-300 space-x-6 overflow-hidden overflow-x-auto">
+					<div class="flex py-10 w-300 space-x-6 overflow-hidden overflow-x-auto no-scrollbar">
 						
-						<div class=" flex-shrink-0 bg-darkGrey rounded-3xl h-96 w-72 flex flex-col hover:scale-110 transition duration-500 relativ hover:shadow-purple">
+						<div class=" flex-shrink-0 bg-darkGrey rounded-3xl h-96 w-72 flex flex-col hover:bg-purple hover:scale-110 transition duration-500 relativ hover:shadow-purple">
 							<p class="pt-4 pl-4 pb-1 font-sans text-white text-3xl text-left justify-center w-max">
 								Fuwa Fuwa								 
 							</p>
@@ -407,7 +408,7 @@
 							</p>
 						</div>
 				
-						<div class="flex-shrink-0 bg-darkGrey rounded-3xl h-96 w-72 flex flex-col hover:scale-110 transition duration-500 relative">
+						<div class="flex-shrink-0 bg-darkGrey rounded-3xl h-96 w-72 flex flex-col hover:bg-purple hover:scale-110 transition duration-500 relative">
 							<p class="pt-4 pl-4 pb-1 font-sans text-white text-3xl text-left justify-center w-max">
 								LyricSync								 
 							</p>
@@ -423,7 +424,7 @@
 							</p>
 						</div>		
 												
-						<div class="flex-shrink-0 bg-darkGrey rounded-3xl h-96 w-72 flex flex-col hover:scale-110 transition duration-500 relative">
+						<div class="flex-shrink-0 bg-darkGrey rounded-3xl h-96 w-72 flex flex-col hover:bg-purple hover:scale-110 transition duration-500 relative">
 							<p class="pt-4 pl-4 pb-1 font-sans text-white text-3xl text-left justify-center w-max">
 								Resume Website								 
 							</p>
@@ -437,17 +438,18 @@
 							</p>
 						</div>
 								
-						<div class="flex-shrink-0 bg-darkGrey rounded-3xl h-96 w-72 flex flex-col hover:scale-110 transition duration-500 relative">
+						<div class="flex-shrink-0 bg-darkGrey rounded-3xl h-96 w-72 flex flex-col hover:bg-purple hover:scale-110 transition duration-500 relative">
 							<p class="pt-4 pl-4 pb-1 font-sans text-white text-3xl text-left justify-center w-max">
-								Resume Website								 
+								OptiPlan								 
 							</p>
 							<div class="flex px-4 py-1 space-x-2">
-								<img src={svelte} alt="svelte" width="15"/>
-								<img src={html} alt="html" width="15"/>
-								<img src={tailwind} alt="tailwind" width="15"/>
+								<img src={flutter} alt="flutter" width="20"/>
+								<img src={dart} alt="dart" width="15" />
+								<img src={firebase} alt="firebase" width="20"/>
+								<img src={citymapper} alt="citymapper" width="15" />
 							</div>					
 							<p class=" px-4 font-sans text-gray-400 text-sm text-left justify-center">
-								Website developed to display personal and professional qualities	
+								Mobile app aimed at streamlining the user's daily tasks and journeys.	
 							</p>
 						</div>	
 				
@@ -486,4 +488,7 @@
         border-top: 1px solid #ccc; /* Add left border */
         border-bottom: 1px solid #ccc; /* Add right border */
     }
+	.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
 </style>
