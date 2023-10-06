@@ -21,7 +21,8 @@
 	import spotify from '../images/spotify.png';
 	import linkedin from '../images/linkedin.png';
 	import github from '../images/github.png';
-	import citymapper from '../images/citymapper.png';
+	import citymapper from '../images/citymapper.png';	
+	import resumewebsite from '../images/resumewebsite.png';
 
     import ps from '../images/petersymonds.png';
 
@@ -393,7 +394,7 @@
 
                     <p class="p-4 text-white text-6xl font-mono text-left">Projects</p>
 
-					<div class="flex py-10 w-300 space-x-6 overflow-hidden overflow-x-auto no-scrollbar">
+					<div class="flex py-10 w-300 space-x-6 overflow-x-auto no-scrollbar">
 						
 						<div class=" flex-shrink-0 bg-darkGrey rounded-3xl h-96 w-72 flex flex-col hover:bg-purple hover:scale-110 transition duration-500 relativ hover:shadow-purple">
 							<p class="pt-4 pl-4 pb-1 font-sans text-white text-3xl text-left justify-center w-max">
@@ -401,7 +402,7 @@
 							</p>
 							<div class="flex px-3 py-1 space-x-2">
 								<img src={flutter} alt="flutter" width="20"/>
-								<img src={dart} alt="dart" width="15" />
+								<img src={dart} alt="dart" width="15" />								
 							</div>							
 							<p class=" px-4 font-sans text-gray-400 text-sm text-left justify-center">
 								Application for a small business to organise internal operations
@@ -436,16 +437,19 @@
 							<p class=" px-4 font-sans text-gray-400 text-sm text-left justify-center">
 								Website developed to display personal and professional qualities	
 							</p>
+							<div class="py-8 flex max-w-full max-h-full items-center justify-center">
+								<img src={resumewebsite} alt="resumewebsite" width="250"/>
+							</div>							
 						</div>
 								
 						<div class="flex-shrink-0 bg-darkGrey rounded-3xl h-96 w-72 flex flex-col hover:bg-purple hover:scale-110 transition duration-500 relative">
 							<p class="pt-4 pl-4 pb-1 font-sans text-white text-3xl text-left justify-center w-max">
 								OptiPlan								 
-							</p>
-							<div class="flex px-4 py-1 space-x-2">
+							</p>	
+							<div class="flex px-3 py-1 space-x-2">
 								<img src={flutter} alt="flutter" width="20"/>
 								<img src={dart} alt="dart" width="15" />
-								<img src={firebase} alt="firebase" width="20"/>
+								<img src={firebase} alt="firebase" width="10"/>
 								<img src={citymapper} alt="citymapper" width="15" />
 							</div>					
 							<p class=" px-4 font-sans text-gray-400 text-sm text-left justify-center">
