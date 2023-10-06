@@ -403,7 +403,8 @@
 							</p>
 							<div class="flex px-3 py-1 space-x-2">
 								<img src={flutter} alt="flutter" width="20"/>
-								<img src={dart} alt="dart" width="15" />								
+								<img src={dart} alt="dart" width="15" />
+								<img src={firebase} alt="firebase" width="12" />								
 							</div>							
 							<p class=" px-4 font-sans text-gray-400 text-sm text-left justify-center">
 								Application for a small business to organise internal operations
@@ -453,7 +454,7 @@
 							<div class="flex px-3 py-1 space-x-2">
 								<img src={flutter} alt="flutter" width="20"/>
 								<img src={dart} alt="dart" width="15" />
-								<img src={firebase} alt="firebase" width="10"/>
+								<img src={firebase} alt="firebase" width="12"/>
 								<img src={citymapper} alt="citymapper" width="15" />
 							</div>					
 							<p class=" px-4 font-sans text-gray-400 text-sm text-left justify-center">
