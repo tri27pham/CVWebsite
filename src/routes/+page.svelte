@@ -22,6 +22,7 @@
 	import linkedin from '../images/linkedin.png';
 	import github from '../images/github.png';
 	import citymapper from '../images/citymapper.png';	
+	import fuwafuwa	 from '../images/fuwafuwa.png';
 	import resumewebsite from '../images/resumewebsite.png';
 
     import ps from '../images/petersymonds.png';
@@ -250,82 +251,82 @@
 				<div class="flex flex-col">
 					<p class="p-4 text-white text-6xl font-mono text-left">Experience</p>
 					<div class="flex flex-row space-x-2">
-						<ExperienceProgressBar />
+						<!-- <ExperienceProgressBar /> -->
 
 						<div class="flex flex-col">
 							<div id="Experienced" class="flex flex-row">
 		
-								<p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded font-mono font-semibold text-xl flex flex-col items-center justify-center gap-2 ">
+								<p class="h-28 w-52 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded font-mono font-semibold text-xl flex flex-col items-center justify-center gap-2 ">
 									Experienced: 
 								</p>
 		
-								<p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 ">
-									<img src={python} alt="python" width="30" />
+								<p class="h-28 w-28 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 ">
+									<img src={python} alt="python" width="40" />
 									Python
 								</p>
-								<p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 ">
-									<img src={java} alt="java" width="30" />
+								<p class="h-28 w-28 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 ">
+									<img src={java} alt="java" width="40" />
 									Java
 								</p>
 								<p
-									class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 "
+									class="h-28 w-28 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 "
 								>
-									<img src={flutter} alt="flutter" width="30" />
+									<img src={flutter} alt="flutter" width="45" />
 									Flutter
 								</p>
 								<p
-									class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 "
+									class="h-28 w-28 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 "
 								>
-									<img src={dart} alt="dart" width="30" />
+									<img src={dart} alt="dart" width="40" />
 									Dart
 								</p>
 							</div>
 		
 							<div id="Intermediate" class="flex flex-row">
 		
-								<p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded font-mono font-semibold text-xl flex flex-col items-center justify-center gap-2 ">
+								<p class="h-28 w-52 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded font-mono font-semibold text-xl flex flex-col items-center justify-center gap-2 ">
 									Intermediate: 
 								</p>
 		
 								<p
-									class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 "
+									class="h-28 w-28 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 "
 								>
 									<img src={svelte} alt="svelte" width="25" />
 									Sveltekit
 								</p>
 								<p
-									class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 "
+									class="h-28 w-28 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 "
 								>
 									<img src={tailwind} alt="tailwind" width="30" />
 									Tailwind
 								</p>
 								<p
-									class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 "
+									class="h-28 w-28 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 "
 								>
 									<img src={html} alt="hmtl" width="30" />
 									HTML
 								</p>
 								
 								<p
-									class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 "
+									class="h-28 w-28 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 "
 								>
 									<img src={firebase} alt="firebase" width="25" />
 									Firebase
 								</p>
 								<p
-									class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 "
+									class="h-28 w-28 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 "
 								>
 									<img src={noSql} alt="nosql" width="30" />
 									NoSQL
 								</p>
 								<p
-									class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 "
+									class="h-28 w-28 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 "
 								>
-									<img src={sql} alt="sql" width="30" />
-									SQL
+									<img src={scala} alt="scala" width="20" />
+									Scala
 								</p>
 								<p
-									class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 "
+									class="h-28 w-28 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 "
 								>
 									<img src={swift} alt="swift" width="30" />
 									Swift
@@ -335,29 +336,29 @@
 							
 							<div id="Familiar" class="flex flex-row">
 		
-								<p class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded font-mono font-semibold text-xl flex flex-col items-center justify-center gap-2 ">
+								<p class="h-28 w-52 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded font-mono font-semibold text-xl flex flex-col items-center justify-center gap-2 ">
 									Familiar: 
 								</p>
 								<p
-									class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 "
+									class="h-28 w-28 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 "
 								>
 									<img src={javascript} alt="javascript" width="30" />
 									Javascript
 								</p>
 								
 								<p
-									class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 "
+									class="h-28 w-28 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 "
 								>
 									<img src={cplusplus} alt="c++" width="30" />
 									C++
 								</p>
 								<p
-									class="h-20 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 "
+									class="h-28 w-28 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 "
 								>
-									<img src={scala} alt="scala" width="20" />
-									Scala
+									<img src={sql} alt="sql" width="30" />
+									SQL
 								</p>
-								
+															
 							</div>
 						</div>
 					</div>
@@ -394,7 +395,7 @@
 
                     <p class="p-4 text-white text-6xl font-mono text-left">Projects</p>
 
-					<div class="flex py-10 w-300 space-x-6 overflow-x-auto no-scrollbar">
+					<div class="flex py-10 w-300 space-x-6 overflow-x-auto">
 						
 						<div class=" flex-shrink-0 bg-darkGrey rounded-3xl h-96 w-72 flex flex-col hover:bg-purple hover:scale-110 transition duration-500 relativ hover:shadow-purple">
 							<p class="pt-4 pl-4 pb-1 font-sans text-white text-3xl text-left justify-center w-max">
@@ -402,11 +403,15 @@
 							</p>
 							<div class="flex px-3 py-1 space-x-2">
 								<img src={flutter} alt="flutter" width="20"/>
-								<img src={dart} alt="dart" width="15" />								
+								<img src={dart} alt="dart" width="15" />
+								<img src={firebase} alt="firebase" width="12" />								
 							</div>							
 							<p class=" px-4 font-sans text-gray-400 text-sm text-left justify-center">
 								Application for a small business to organise internal operations
 							</p>
+							<div class="py-4 flex max-w-full max-h-full items-center justify-center">
+								<img src={fuwafuwa} alt="fuwafuwa" width="220"/>
+							</div>
 						</div>
 				
 						<div class="flex-shrink-0 bg-darkGrey rounded-3xl h-96 w-72 flex flex-col hover:bg-purple hover:scale-110 transition duration-500 relative">
@@ -437,8 +442,8 @@
 							<p class=" px-4 font-sans text-gray-400 text-sm text-left justify-center">
 								Website developed to display personal and professional qualities	
 							</p>
-							<div class="py-8 flex max-w-full max-h-full items-center justify-center">
-								<img src={resumewebsite} alt="resumewebsite" width="250"/>
+							<div class="py-6 flex max-w-full max-h-full items-center justify-center">
+								<img src={resumewebsite} alt="resumewebsite" width="200" class="rounded-xl"/>
 							</div>							
 						</div>
 								
@@ -449,7 +454,7 @@
 							<div class="flex px-3 py-1 space-x-2">
 								<img src={flutter} alt="flutter" width="20"/>
 								<img src={dart} alt="dart" width="15" />
-								<img src={firebase} alt="firebase" width="10"/>
+								<img src={firebase} alt="firebase" width="12"/>
 								<img src={citymapper} alt="citymapper" width="15" />
 							</div>					
 							<p class=" px-4 font-sans text-gray-400 text-sm text-left justify-center">
