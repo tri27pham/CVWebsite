@@ -251,7 +251,7 @@
 				<div class="flex flex-col">
 					<p class="p-4 text-white text-6xl font-mono text-left">Experience</p>
 					<div class="flex flex-row space-x-2">
-						<ExperienceProgressBar />
+						<!-- <ExperienceProgressBar /> -->
 
 						<div class="flex flex-col">
 							<div id="Experienced" class="flex flex-row">
@@ -395,7 +395,7 @@
 
                     <p class="p-4 text-white text-6xl font-mono text-left">Projects</p>
 
-					<div class="flex py-10 w-300 space-x-6 overflow-x-auto no-scrollbar">
+					<div class="flex py-10 w-300 space-x-6 overflow-x-auto">
 						
 						<div class=" flex-shrink-0 bg-darkGrey rounded-3xl h-96 w-72 flex flex-col hover:bg-purple hover:scale-110 transition duration-500 relativ hover:shadow-purple">
 							<p class="pt-4 pl-4 pb-1 font-sans text-white text-3xl text-left justify-center w-max">
