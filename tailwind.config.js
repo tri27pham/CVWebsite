@@ -1,6 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./src/**/*.{html,js,svelte,ts}'],
+  content: [
+    './src/**/*.{html,js,svelte,ts}',
+    join(require.resolve(
+			'@skeletonlabs/skeleton'),
+			'../**/*.{html,js,svelte,ts}'
+		)
+  ],
   theme: {
     extend: {
       fontSize:{
@@ -59,5 +65,6 @@ export default {
   },
   plugins: [
     require('tailwind-scrollbar'),
+    skeleton
   ]
 };
