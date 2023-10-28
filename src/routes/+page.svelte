@@ -30,10 +30,10 @@
 
     import downArrow from '../images/downArrow.png';
     import upArrow from '../images/upArrow.png';
-    
-
 
     import { fade } from 'svelte/transition';
+	
+	import Fuwa from '../components/fuwa.svelte'
 
     let loadingScreenVisible = true;
 
@@ -55,7 +55,7 @@
         setTimeout(() => {
         contactBtnVisible = true;
     }, 7800);
-
+	
 </script>
 
 
@@ -105,9 +105,14 @@
 {#await pageVisible then value}
 	{#if value}
 
-		<div id="top" class="h-screen relative">
+		<div id="top" class="h-screen relative snap-y snap-mandatory">
 
-			<nav class="text-white font-mono absolute z-10 ">
+			<nav class=" text-white font-mono absolute z-10 ">
+				<h2
+						class="p-4 text-white font-mono text-2xl animate-typing overflow-hidden whitespace-nowrap"
+					>
+						<span style=" color:blueviolet;">[ WORK IN PROGRESS ]</span>
+				</h2>
 				<div
 					class="z-50 fixed top-7 left-10 text-xl hover:scale-125 transition-transform duration-500 hover:text-purple"
 				>
@@ -286,14 +291,7 @@
 		
 								<p class="h-28 w-52 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded font-mono font-semibold text-xl flex flex-col items-center justify-center gap-2 ">
 									Intermediate: 
-								</p>
-		
-								<p
-									class="h-28 w-28 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 "
-								>
-									<img src={svelte} alt="svelte" width="25" />
-									Sveltekit
-								</p>
+								</p>									
 								<p
 									class="h-28 w-28 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 "
 								>
@@ -358,6 +356,12 @@
 									<img src={sql} alt="sql" width="30" />
 									SQL
 								</p>
+								<p
+								class="h-28 w-28 bg-charcoal px-4 py-2 mr-2 mt-2 text-gray-400 rounded text-base font-mono font-semibold flex flex-col items-center justify-center gap-2 "
+								>
+									<img src={svelte} alt="svelte" width="25" />
+									Sveltekit
+								</p>
 															
 							</div>
 						</div>
@@ -377,7 +381,6 @@
 					/>
 				</a>
 			</div>
-
 
 			<div id="Projects" class="h-screen z-0 flex justify-center items-center relative">
 
@@ -469,6 +472,11 @@
 
                
 			</div>
+
+			<!-- 
+			{#if showModal}
+				<Modal/>
+			{/if} -->
 
 		</div>
 	{/if}
