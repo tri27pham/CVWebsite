@@ -146,6 +146,10 @@
 
 			<div id="MainPage" class="h-screen flex items-center z-0 relative">
 				<div style="text-align: left;">
+					<h2
+					class="p-4 text-white font-mono text-2xl animate-typing overflow-hidden whitespace-nowrap">
+						<span style=" color:blueviolet;">[ WORK IN PROGRESS ]</span>
+					</h2>
 					<h3
 						class=" p-4 text-center animate-typing overflow-hidden whitespace-nowrap
                             hover:scale-110 transition duration-500
